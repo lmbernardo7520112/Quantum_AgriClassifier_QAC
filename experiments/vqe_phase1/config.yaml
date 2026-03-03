@@ -1,0 +1,65 @@
+# VQE Phase 1 — Experiment Configuration
+# Status: PLANNED — Not executed
+
+experiment_id: VQE_PHASE1_BINARY
+status: PLANNED
+created_at: "2026-03-02T21:15:00-03:00"
+
+# ─── Dataset ───
+dataset:
+  name: plantvillage
+  source: local
+  path: "C:\\Users\\USER\\Downloads\\Quantum_AgriClassifier_QAC_dataset\\PlantVillage-Dataset"
+  classes_filter:
+    - "Tomato___healthy"
+    - "Tomato___Bacterial_spot"
+  max_samples: 500
+  split_ratio: 0.8
+  seed: 42
+
+# ─── Preprocessing ───
+preprocessing:
+  pca_components: 8
+  normalization: "feature-wise to [0, 2π]"
+
+# ─── Quantum Configuration ───
+quantum:
+  n_qubits: 8
+  ansatz: real_amplitudes
+  ansatz_reps: 2
+  optimizer: cobyla
+  max_iter: 100
+  coupling_strength: 1.0    # γ — Ising ZZ coupling
+  transverse_field: 0.5     # h — Pauli-X mixing
+  backend: aer_statevector
+
+# ─── Reproducibility ───
+reproducibility:
+  primary_seed: 42
+  secondary_seed: 123       # For reproduction test
+  dataset_hash: "TBD — computed at load time"
+
+# ─── Statistical Tests ───
+statistical_tests:
+  t_test:
+    type: welch_two_sample
+    alpha: 0.05
+    alternative: two-sided
+  permutation_test:
+    n_permutations: 1000
+    alpha: 0.05
+
+# ─── Success Criteria ───
+success_criteria:
+  accuracy_min: 0.60
+  f1_min: 0.55
+  delta_energy_positive: true
+  p_value_max: 0.05
+  convergence_required: true
+  reproducibility_tolerance: 0.0  # exact match for same seed
+
+# ─── Risk Mitigations ───
+risk_mitigations:
+  max_training_time_hours: 2
+  fallback_max_samples: 200
+  fallback_max_iter: 200

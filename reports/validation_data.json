@@ -1,0 +1,200 @@
+{
+  "results": {
+    "phase1": {
+      "name": "MCP Core Validation",
+      "tests": [
+        {
+          "name": "Health endpoint responds",
+          "passed": true,
+          "detail": "status=healthy"
+        },
+        {
+          "name": "Server version correct",
+          "passed": true,
+          "detail": "0.1.0"
+        },
+        {
+          "name": "10 tools registered",
+          "passed": true,
+          "detail": "found 10"
+        },
+        {
+          "name": "All 10 tools in /tools/list",
+          "passed": true,
+          "detail": "all present"
+        },
+        {
+          "name": "/resources/list executes OK",
+          "passed": true,
+          "detail": "resources=0"
+        },
+        {
+          "name": "Registry file: models.json",
+          "passed": true,
+          "detail": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/registry/models.json"
+        },
+        {
+          "name": "Registry file: metrics.json",
+          "passed": true,
+          "detail": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/registry/metrics.json"
+        },
+        {
+          "name": "Registry file: experiments.json",
+          "passed": true,
+          "detail": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/registry/experiments.json"
+        },
+        {
+          "name": "Registry file: context.json",
+          "passed": true,
+          "detail": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/registry/context.json"
+        }
+      ],
+      "passed": true
+    },
+    "phase2": {
+      "name": "Invariant Tests",
+      "tests": [
+        {
+          "name": "INV1 - Experiment ID generated",
+          "passed": true,
+          "detail": "id=exp-bd064d4b"
+        },
+        {
+          "name": "INV1 - Experiment status success",
+          "passed": true,
+          "detail": "success"
+        },
+        {
+          "name": "INV1 - Datasets detected",
+          "passed": true,
+          "detail": "found: ['eurosat_rgb', 'eurosat_ms', 'plantvillage']"
+        },
+        {
+          "name": "INV1 - Experiment persisted to disk",
+          "passed": true,
+          "detail": "experiment_id=exp-bd064d4b"
+        },
+        {
+          "name": "INV2 - Seed registered in context",
+          "passed": true,
+          "detail": "seed=42"
+        },
+        {
+          "name": "INV2 - Backend explicitly defined",
+          "passed": true,
+          "detail": "backend=aer_statevector"
+        },
+        {
+          "name": "INV3 - Server did NOT crash",
+          "passed": true,
+          "detail": "HTTP 200"
+        },
+        {
+          "name": "INV3 - Structured error returned",
+          "passed": true,
+          "detail": "error_type=TOOL_NOT_FOUND"
+        },
+        {
+          "name": "INV3 - Error type is TOOL_NOT_FOUND",
+          "passed": true,
+          "detail": "TOOL_NOT_FOUND"
+        },
+        {
+          "name": "INV4 - Server did NOT crash",
+          "passed": true,
+          "detail": "HTTP 200"
+        },
+        {
+          "name": "INV4 - Structured error returned",
+          "passed": true,
+          "detail": "error_type=SCHEMA_VALIDATION_ERROR"
+        },
+        {
+          "name": "INV5 - All registry files valid JSON",
+          "passed": true,
+          "detail": "all parseable"
+        },
+        {
+          "name": "INV5 - Registry idempotent on re-read",
+          "passed": true,
+          "detail": "snapshot == re-read"
+        },
+        {
+          "name": "INV5 - Experiments ledger accessible",
+          "passed": true,
+          "detail": "count=3"
+        }
+      ],
+      "passed": true
+    },
+    "phase3": {
+      "name": "Autonomy Tests",
+      "tests": [
+        {
+          "name": "CONCURRENCY - Both calls succeeded",
+          "passed": true,
+          "detail": "HTTP 200, 200"
+        },
+        {
+          "name": "CONCURRENCY - Experiment IDs unique",
+          "passed": true,
+          "detail": "id1=exp-09de08b2, id2=exp-bf39ffdd"
+        },
+        {
+          "name": "CONCURRENCY - Registry not corrupted",
+          "passed": true,
+          "detail": "issues=[]"
+        },
+        {
+          "name": "CONTEXT_LOSS - Contexts persisted on disk",
+          "passed": true,
+          "detail": "count=3"
+        },
+        {
+          "name": "PHYSICAL_AUDIT - Audit endpoint works",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "PHYSICAL_AUDIT - All files valid",
+          "passed": true,
+          "detail": "details=0 resources checked"
+        },
+        {
+          "name": "RECOVERY - Server did NOT crash",
+          "passed": true,
+          "detail": "HTTP 200"
+        },
+        {
+          "name": "RECOVERY - Error returned",
+          "passed": true,
+          "detail": "UNEXPECTED_ERROR"
+        },
+        {
+          "name": "RECOVERY - FAILED experiment logged",
+          "passed": true,
+          "detail": "failed_count=3"
+        },
+        {
+          "name": "RECOVERY - lessons.md updated",
+          "passed": true,
+          "detail": "length=632 chars"
+        },
+        {
+          "name": "RECOVERY - Registry intact after error",
+          "passed": true,
+          "detail": "issues=[]"
+        }
+      ],
+      "passed": true
+    }
+  },
+  "verdict": "READY",
+  "timestamp": "2026-03-02T19:34:23-0300",
+  "registry_hashes": {
+    "models.json": "1734b5922e8cc61002f8d63c0551453b60999f6b14d612577a5bf9ad879491e1",
+    "metrics.json": "1734b5922e8cc61002f8d63c0551453b60999f6b14d612577a5bf9ad879491e1",
+    "experiments.json": "e802f0eec09ee414ac4c3958ede002aa8bc88cc00eb3c343456417c33baa0dd6",
+    "context.json": "21afa542a974be2cc56e06adf5a75170925002772f2c3773a99c5ddd1384be65"
+  }
+}

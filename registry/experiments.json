@@ -1,0 +1,237 @@
+{
+  "experiments": {
+    "exp-bd064d4b": {
+      "experiment_id": "exp-bd064d4b",
+      "tool_name": "tool.initialize_project",
+      "status": "COMPLETED",
+      "input": {
+        "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+        "dataset_root": "/mnt/c/Users/USER/Downloads/Quantum_AgriClassifier_QAC_dataset"
+      },
+      "output": {
+        "experiment_id": "exp-bd064d4b",
+        "status": "success",
+        "datasets_found": [
+          "eurosat_rgb",
+          "eurosat_ms",
+          "plantvillage"
+        ],
+        "environment": {
+          "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+          "dataset_root": "/mnt/c/Users/USER/Downloads/Quantum_AgriClassifier_QAC_dataset"
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:16-0300",
+      "context": {
+        "context_id": "exp-bd064d4b",
+        "timestamp": "2026-03-02T19:34:16-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-de736076": {
+      "experiment_id": "exp-de736076",
+      "tool_name": "tool.nonexistent",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.nonexistent",
+        "error_type": "TOOL_NOT_FOUND",
+        "message": "Tool 'tool.nonexistent' is not registered.",
+        "details": {
+          "available_tools": [
+            "tool.initialize_project",
+            "tool.load_dataset",
+            "tool.run_baseline",
+            "tool.train_qsvm",
+            "tool.train_vqc",
+            "tool.train_data_reupload",
+            "tool.evaluate_model",
+            "tool.compare_models",
+            "tool.simulate_noise",
+            "tool.deploy_ibm"
+          ]
+        },
+        "timestamp": "2026-03-02T19:34:16-0300"
+      },
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:16-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-e1e5b031": {
+      "experiment_id": "exp-e1e5b031",
+      "tool_name": "tool.train_qsvm",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_qsvm",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_qsvm'.",
+        "details": {
+          "validation_errors": [
+            "$: 'dataset_resource_id' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-02T19:34:16-0300"
+      },
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:16-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-09de08b2": {
+      "experiment_id": "exp-09de08b2",
+      "tool_name": "tool.initialize_project",
+      "status": "COMPLETED",
+      "input": {
+        "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+        "dataset_root": "/tmp/ds1"
+      },
+      "output": {
+        "experiment_id": "exp-09de08b2",
+        "status": "success",
+        "datasets_found": [],
+        "environment": {
+          "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+          "dataset_root": "/tmp/ds1"
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:16-0300",
+      "context": {
+        "context_id": "exp-09de08b2",
+        "timestamp": "2026-03-02T19:34:16-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-bf39ffdd": {
+      "experiment_id": "exp-bf39ffdd",
+      "tool_name": "tool.initialize_project",
+      "status": "COMPLETED",
+      "input": {
+        "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+        "dataset_root": "/tmp/ds2"
+      },
+      "output": {
+        "experiment_id": "exp-bf39ffdd",
+        "status": "success",
+        "datasets_found": [],
+        "environment": {
+          "project_root": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC",
+          "dataset_root": "/tmp/ds2"
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:16-0300",
+      "context": {
+        "context_id": "exp-bf39ffdd",
+        "timestamp": "2026-03-02T19:34:16-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-1f5b095d": {
+      "experiment_id": "exp-1f5b095d",
+      "tool_name": "tool.load_dataset",
+      "status": "FAILED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_path": "/nonexistent/path/invalid"
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "[Errno 2] No such file or directory: '/nonexistent/path/invalid'",
+        "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 91, in tool_load_dataset\n    result = load_dataset(dataset_name, dataset_path, seed=seed, max_samples=max_samples)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 484, in load_dataset\n    return load_eurosat_rgb(dataset_path, seed=seed, max_samples=max_samples, img_size=img_size)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 148, in load_eurosat_rgb\n    class_names = sorted([d.name for d in dataset_path.iterdir() if d.is_dir()])\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1058, in iterdir\n    for name in os.listdir(self):\n                ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/nonexistent/path/invalid'\n"
+      },
+      "started_at": "2026-03-02T19:34:16-0300",
+      "completed_at": "2026-03-02T19:34:23-0300",
+      "context": {
+        "context_id": "exp-1f5b095d",
+        "timestamp": "2026-03-02T19:34:16-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "VQE_PHASE1_BINARY": {
+      "experiment_id": "VQE_PHASE1_BINARY",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED_WITH_LIMITATIONS",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 100,
+        "coupling_strength": 1.0,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector"
+      },
+      "output": {
+        "accuracy": 0.64,
+        "f1_score": 0.64,
+        "delta_E": 1.3883409611783861,
+        "p_ttest": 0.7593371778855762,
+        "p_perm": 0.7462537462537463,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -43.05240642732874,
+          "1": -41.76852269809972
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-02T21:41:12-0300",
+      "completed_at": "2026-03-02T21:41:15-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "70db8c290626a336",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE1_BINARY.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE1_BINARY"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "last_updated": "2026-03-02T21:41:15-0300"
+}

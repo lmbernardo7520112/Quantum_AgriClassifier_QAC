@@ -1,0 +1,42 @@
+{
+  "contexts": {
+    "exp-bd064d4b": {
+      "context_id": "exp-bd064d4b",
+      "timestamp": "2026-03-02T19:34:16-0300",
+      "seed": 42,
+      "dataset_hash": "",
+      "backend": "aer_statevector",
+      "model_version": "",
+      "extra": {}
+    },
+    "exp-09de08b2": {
+      "context_id": "exp-09de08b2",
+      "timestamp": "2026-03-02T19:34:16-0300",
+      "seed": 42,
+      "dataset_hash": "",
+      "backend": "aer_statevector",
+      "model_version": "",
+      "extra": {}
+    },
+    "exp-bf39ffdd": {
+      "context_id": "exp-bf39ffdd",
+      "timestamp": "2026-03-02T19:34:16-0300",
+      "seed": 42,
+      "dataset_hash": "",
+      "backend": "aer_statevector",
+      "model_version": "",
+      "extra": {}
+    },
+    "exp-1f5b095d": {
+      "context_id": "exp-1f5b095d",
+      "timestamp": "2026-03-02T19:34:16-0300",
+      "seed": 42,
+      "dataset_hash": "",
+      "backend": "aer_statevector",
+      "model_version": "",
+      "extra": {}
+    }
+  },
+  "version": "1.0.0",
+  "last_updated": "2026-03-02T19:34:16-0300"
+}

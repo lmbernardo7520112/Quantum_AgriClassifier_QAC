@@ -1,0 +1,19 @@
+{
+  "resources": {
+    "model-VQE_PHASE1_BINARY": {
+      "resource_id": "model-VQE_PHASE1_BINARY",
+      "resource_type": "resource.model",
+      "file_path": "/mnt/c/Users/USER/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE1_BINARY.pkl",
+      "file_hash": "d24127db9fb563ab7fd03370ede8fb4b958939b33d2db6fc998a4e204df70b8b",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "experiment_id": "VQE_PHASE1_BINARY",
+        "n_qubits": 8
+      },
+      "created_at": "2026-03-02T21:41:15-0300",
+      "experiment_id": "VQE_PHASE1_BINARY"
+    }
+  },
+  "version": "1.0.0",
+  "last_updated": "2026-03-02T21:41:15-0300"
+}
