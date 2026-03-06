@@ -153,10 +153,13 @@ def load_eurosat_rgb(
     label_encoder = LabelEncoder()
     label_encoder.fit(class_names)
 
+    max_per_class = max_samples // len(class_names) if max_samples else None
+
     for class_dir in sorted(dataset_path.iterdir()):
         if not class_dir.is_dir():
             continue
         class_label = class_dir.name
+        class_count = 0
         for img_file in sorted(class_dir.iterdir()):
             if img_file.suffix.lower() in (".jpg", ".jpeg", ".png"):
                 try:
@@ -164,9 +167,10 @@ def load_eurosat_rgb(
                     img_array = np.array(img, dtype=np.float32).flatten() / 255.0
                     images.append(img_array)
                     labels.append(class_label)
+                    class_count += 1
                 except Exception:
                     continue
-                if max_samples and len(images) >= max_samples:
+                if max_per_class and class_count >= max_per_class:
                     break
         if max_samples and len(images) >= max_samples:
             break

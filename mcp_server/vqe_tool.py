@@ -174,7 +174,7 @@ def register_vqe_tool(tool_registry, schema_registry=None) -> None:
     """
     # Register schema if schema_registry provided
     if schema_registry is not None:
-        schema_registry._schemas.update(VQE_TOOL_SCHEMA)
+        schema_registry.register_tool(VQE_TOOL_SCHEMA["tool.train_vqe_classifier"])
 
     # Register tool function
     tool_registry.register("tool.train_vqe_classifier", tool_train_vqe_classifier)

@@ -99,7 +99,7 @@ def train_qsvm(
         "model_path": str(model_path),
         "model_hash": model_hash,
         "metrics": metrics,
-        "circuit_depth": feature_map.depth,
+        "circuit_depth": feature_map.depth() if callable(feature_map.depth) else feature_map.depth,
         "n_qubits_used": n_qubits,
         "hyperparameters": {
             "feature_map": feature_map_type,

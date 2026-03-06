@@ -90,7 +90,6 @@ def tool_load_dataset(
 
     result = load_dataset(dataset_name, dataset_path, seed=seed, max_samples=max_samples)
 
-    # Register as resource.dataset
     resource = resource_registry.register(
         resource_type="resource.dataset",
         metadata={
@@ -478,6 +477,224 @@ def tool_deploy_ibm(
     }
 
 
+def tool_run_baseline_logreg(
+    input_data: dict[str, Any],
+    experiment_id: str,
+    context: dict[str, Any],
+    resource_registry: ResourceRegistry,
+    context_manager: ContextManager,
+) -> dict[str, Any]:
+    """tool.run_baseline_logreg — EuroSat Logistic Regression baseline."""
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import accuracy_score, f1_score
+    import time
+
+    dataset_resource_id = input_data["dataset_resource_id"]
+    seed = input_data.get("seed", 42)
+    dataset = _get_cached_dataset(dataset_resource_id)
+    
+    bl_logreg = LogisticRegression(max_iter=1000, random_state=seed)
+    
+    t0 = time.time()
+    bl_logreg.fit(dataset.X_train, dataset.y_train)
+    train_time = time.time() - t0
+    
+    y_pred = bl_logreg.predict(dataset.X_test)
+    acc = accuracy_score(dataset.y_test, y_pred)
+    f1 = f1_score(dataset.y_test, y_pred)
+    
+    metrics = {"accuracy": acc, "f1_score": f1, "train_time": train_time}
+    
+    model_res = resource_registry.register(
+        resource_type="resource.model",
+        metadata={"model_type": "logistic_regression"},
+        file_path=None, file_hash=None, experiment_id=experiment_id
+    )
+    metric_res = resource_registry.register(
+        resource_type="resource.metrics",
+        metadata={"model_type": "logistic_regression", "metrics": metrics},
+        experiment_id=experiment_id,
+    )
+    return {
+        "experiment_id": experiment_id,
+        "model_resource": {"resource_type": "resource.model", "resource_id": model_res["resource_id"]},
+        "metrics_resource": {"resource_type": "resource.metrics", "resource_id": metric_res["resource_id"]},
+        "metrics": metrics
+    }
+
+
+def tool_train_vqe_manual(
+    input_data: dict[str, Any],
+    experiment_id: str,
+    context: dict[str, Any],
+    resource_registry: ResourceRegistry,
+    context_manager: ContextManager,
+) -> dict[str, Any]:
+    """tool.train_vqe_manual — Custom Energy-based Variational Quantum Eigensolver."""
+    from classical.data_loader import apply_pca
+    from sklearn.preprocessing import minmax_scale
+    from qiskit.circuit.library import RealAmplitudes
+    from qiskit.quantum_info import SparsePauliOp
+    from qiskit.primitives import StatevectorEstimator
+    from scipy.optimize import minimize as scipy_minimize
+    from sklearn.metrics import accuracy_score, f1_score
+    import numpy as np
+    import time
+
+    dataset_resource_id = input_data["dataset_resource_id"]
+    n_qubits = input_data.get("n_qubits", 4)
+    seed = input_data.get("seed", 42)
+    max_iter = input_data.get("max_iter", 50)
+    
+    dataset = _get_cached_dataset(dataset_resource_id)
+    if dataset.feature_dim != n_qubits:
+        dataset = apply_pca(dataset, n_components=n_qubits, seed=seed)
+        
+    X_tr_scaled = minmax_scale(dataset.X_train, feature_range=(-1, 1))
+    X_te_scaled = minmax_scale(dataset.X_test, feature_range=(-1, 1))
+    y_tr, y_te = dataset.y_train, dataset.y_test
+
+    def build_hamiltonian(X_class, gamma=0.5, h=0.5):
+        centroid = np.mean(X_class, axis=0)
+        paulis, coeffs = [], []
+        for i in range(n_qubits):
+            z_term = ["I"] * n_qubits; z_term[i] = "Z"; paulis.append("".join(z_term)); coeffs.append(gamma * centroid[i])
+            x_term = ["I"] * n_qubits; x_term[i] = "X"; paulis.append("".join(x_term)); coeffs.append(h)
+        return SparsePauliOp(paulis, coeffs)
+
+    def evaluate_energy(params, ansatz, hamiltonian, estimator):
+        return float(estimator.run([(ansatz, [hamiltonian], [params])]).result()[0].data.evs[0])
+
+    def run_vqe(H):
+        ansatz = RealAmplitudes(num_qubits=H.num_qubits, reps=2)
+        est = StatevectorEstimator(seed=seed)
+        np.random.seed(seed)
+        x0 = np.random.uniform(0, 2 * np.pi, ansatz.num_parameters)
+        res = scipy_minimize(lambda p: evaluate_energy(p, ansatz, H, est), x0, method='COBYLA', options={'maxiter': max_iter})
+        return res.fun, res.x
+
+    t0 = time.time()
+    E0, theta0 = run_vqe(build_hamiltonian(X_tr_scaled[y_tr == 0]))
+    E1, theta1 = run_vqe(build_hamiltonian(X_tr_scaled[y_tr == 1]))
+    train_time = time.time() - t0
+
+    t_inf = time.time()
+    est_inf = StatevectorEstimator(seed=seed)
+    ansatz_inf = RealAmplitudes(num_qubits=n_qubits, reps=2)
+    y_pred = []
+    for x in X_te_scaled:
+        Hx = build_hamiltonian(x.reshape(1, -1))
+        e0 = evaluate_energy(theta0, ansatz_inf, Hx, est_inf)
+        e1 = evaluate_energy(theta1, ansatz_inf, Hx, est_inf)
+        y_pred.append(0 if e0 < e1 else 1)
+    inf_time = time.time() - t_inf
+
+    metrics = {
+        "accuracy": accuracy_score(y_te, y_pred), "f1_score": f1_score(y_te, y_pred),
+        "E0": E0, "E1": E1, "train_time": train_time, "inference_time": inf_time
+    }
+    
+    model_res = resource_registry.register(
+        resource_type="resource.model",
+        metadata={"model_type": "vqe_manual", "theta0": theta0.tolist(), "theta1": theta1.tolist()},
+        file_path=None, file_hash=None, experiment_id=experiment_id
+    )
+    metric_res = resource_registry.register(
+        resource_type="resource.metrics",
+        metadata={"model_type": "vqe_manual", "metrics": metrics},
+        experiment_id=experiment_id,
+    )
+    return {
+        "experiment_id": experiment_id,
+        "model_resource": {"resource_type": "resource.model", "resource_id": model_res["resource_id"]},
+        "metrics_resource": {"resource_type": "resource.metrics", "resource_id": metric_res["resource_id"]},
+        "metrics": metrics
+    }
+
+
+def tool_train_vqc_manual(
+    input_data: dict[str, Any],
+    experiment_id: str,
+    context: dict[str, Any],
+    resource_registry: ResourceRegistry,
+    context_manager: ContextManager,
+) -> dict[str, Any]:
+    """tool.train_vqc_manual — Custom Variational Quantum Classifier via Cross Entropy."""
+    from classical.data_loader import apply_pca
+    from sklearn.preprocessing import minmax_scale
+    from qiskit.circuit.library import real_amplitudes, zz_feature_map
+    from qiskit.primitives import StatevectorSampler
+    from scipy.optimize import minimize as scipy_minimize
+    from sklearn.metrics import accuracy_score, f1_score
+    import numpy as np
+    import time
+
+    dataset_resource_id = input_data["dataset_resource_id"]
+    n_qubits = input_data.get("n_qubits", 4)
+    seed = input_data.get("seed", 42)
+    max_iter = input_data.get("max_iter", 50)
+    
+    dataset = _get_cached_dataset(dataset_resource_id)
+    if dataset.feature_dim != n_qubits:
+        dataset = apply_pca(dataset, n_components=n_qubits, seed=seed)
+        
+    X_tr_scaled = minmax_scale(dataset.X_train, feature_range=(-1, 1))
+    X_te_scaled = minmax_scale(dataset.X_test, feature_range=(-1, 1))
+    y_tr, y_te = dataset.y_train, dataset.y_test
+
+    feature_map = zz_feature_map(feature_dimension=n_qubits, reps=2)
+    ansatz = real_amplitudes(num_qubits=n_qubits, reps=2)
+    fm_params = list(feature_map.parameters)
+    an_params = list(ansatz.parameters)
+    circ = feature_map.compose(ansatz)
+    circ.measure_all()
+    sampler = StatevectorSampler(seed=seed)
+
+    def predict_batch(params, X_batch):
+        pubs = []
+        for x in X_batch:
+            binds = {p: v for p, v in zip(fm_params, x)}
+            binds.update({p: v for p, v in zip(an_params, params)})
+            pubs.append((circ, binds))
+        res = sampler.run(pubs).result()
+        probs = []
+        for r in res:
+            counts = r.data.meas.get_counts()
+            tot = sum(counts.values())
+            probs.append(sum(c for b, c in counts.items() if b.count('1') % 2 != 0) / max(tot, 1))
+        return np.array(probs)
+
+    np.random.seed(seed)
+    x0 = np.random.uniform(0, 2*np.pi, ansatz.num_parameters)
+    
+    t0 = time.time()
+    res = scipy_minimize(lambda p: -np.mean(y_tr * np.log(np.clip(predict_batch(p, X_tr_scaled), 1e-10, 1 - 1e-10)) + (1 - y_tr) * np.log(1 - np.clip(predict_batch(p, X_tr_scaled), 1e-10, 1 - 1e-10))), x0, method='COBYLA', options={'maxiter': max_iter})
+    train_time = time.time() - t0
+    
+    t_inf = time.time()
+    y_pred = (predict_batch(res.x, X_te_scaled) > 0.5).astype(int)
+    inf_time = time.time() - t_inf
+
+    metrics = {"accuracy": accuracy_score(y_te, y_pred), "f1_score": f1_score(y_te, y_pred), "train_time": train_time, "inference_time": inf_time}
+    
+    model_res = resource_registry.register(
+        resource_type="resource.model",
+        metadata={"model_type": "vqc_manual", "params": res.x.tolist()},
+        file_path=None, file_hash=None, experiment_id=experiment_id
+    )
+    metric_res = resource_registry.register(
+        resource_type="resource.metrics",
+        metadata={"model_type": "vqc_manual", "metrics": metrics},
+        experiment_id=experiment_id,
+    )
+    return {
+        "experiment_id": experiment_id,
+        "model_resource": {"resource_type": "resource.model", "resource_id": model_res["resource_id"]},
+        "metrics_resource": {"resource_type": "resource.metrics", "resource_id": metric_res["resource_id"]},
+        "metrics": metrics
+    }
+
+
 # ─────────────────── Dataset Cache ─────────────────────
 
 _dataset_cache: dict[str, Any] = {}
@@ -506,6 +723,9 @@ TOOL_FUNCTIONS = {
     "tool.compare_models": tool_compare_models,
     "tool.simulate_noise": tool_simulate_noise,
     "tool.deploy_ibm": tool_deploy_ibm,
+    "tool.run_baseline_logreg": tool_run_baseline_logreg,
+    "tool.train_vqe_manual": tool_train_vqe_manual,
+    "tool.train_vqc_manual": tool_train_vqc_manual,
 }
 
 

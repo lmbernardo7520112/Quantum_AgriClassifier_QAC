@@ -1,0 +1,33 @@
+{
+  "config": {
+    "optimizer_type": "spsa",
+    "ansatz_type": "real_amplitudes",
+    "ansatz_reps": 2,
+    "coupling_strength": 0.5,
+    "transverse_field": 0.5,
+    "max_iter": 100,
+    "n_qubits": 8,
+    "backend": "aer_statevector"
+  },
+  "seed": 123,
+  "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+  "accuracy": 0.43,
+  "f1_score": 0.3851795922769928,
+  "delta_E": 3.1725243260907767,
+  "var_intra_class0": 8.894128156673247,
+  "var_intra_class1": 12.472092627955226,
+  "cohens_d": 0.9750993942730216,
+  "p_value_ttest": 5.2763934776218e-06,
+  "p_value_permutation": 0.000999000999000999,
+  "training_time_s": 1.249,
+  "inference_time_s": 0.926,
+  "vqe_energies": {
+    "0": -7.0338097121974466,
+    "1": -12.328603876010405
+  },
+  "model_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123.pkl",
+  "model_hash": "78e5681c2c3a7a1b3f914a9755f8adef590d0935c16186979f663b60c1fa911b",
+  "convergence": true,
+  "status": "COMPLETED",
+  "error": null
+}

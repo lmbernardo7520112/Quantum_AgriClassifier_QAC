@@ -48,3 +48,8 @@ Thumbs.db
 *.pt
 *.pth
 models/*.bin
+
+# Ignorar pastas de ambiente e diretórios grandes
+venv_QAC/
+datasets/
+test_json_*.py

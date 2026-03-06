@@ -352,6 +352,85 @@ TOOL_SCHEMAS: dict[str, dict[str, Any]] = {
         "preconditions": ["model_trained", "dataset_loaded", "ibm_token_configured"],
         "postconditions": ["resource.metrics_registered", "experiment_registered"],
     },
+
+    "tool.run_baseline_logreg": {
+        "name": "tool.run_baseline_logreg",
+        "description": "Train classical baseline model (Logistic Regression) on EuroSat.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dataset_resource_id": {"type": "string"},
+                "seed": {"type": "integer"}
+            },
+            "required": ["dataset_resource_id"]
+        },
+        "output_schema": {
+            "type": "object",
+            "properties": {
+                "experiment_id": EXPERIMENT_ID_SCHEMA,
+                "model_resource": RESOURCE_REF_SCHEMA,
+                "metrics_resource": RESOURCE_REF_SCHEMA,
+                "metrics": METRICS_SCHEMA,
+            },
+            "required": ["experiment_id", "model_resource", "metrics_resource", "metrics"]
+        },
+        "preconditions": ["dataset_loaded"],
+        "postconditions": ["resource.model_registered", "resource.metrics_registered", "experiment_registered"]
+    },
+
+    "tool.train_vqe_manual": {
+        "name": "tool.train_vqe_manual",
+        "description": "Train VQE purely manually using Qiskit 2.x Primitives to avoid ML issues.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dataset_resource_id": {"type": "string"},
+                "n_qubits": {"type": "integer", "minimum": 2, "maximum": 10},
+                "max_iter": {"type": "integer"},
+                "seed": {"type": "integer"}
+            },
+            "required": ["dataset_resource_id"]
+        },
+        "output_schema": {
+            "type": "object",
+            "properties": {
+                "experiment_id": EXPERIMENT_ID_SCHEMA,
+                "model_resource": RESOURCE_REF_SCHEMA,
+                "metrics_resource": RESOURCE_REF_SCHEMA,
+                "metrics": {"type": "object"}
+            },
+            "required": ["experiment_id", "model_resource", "metrics_resource", "metrics"]
+        },
+        "preconditions": ["dataset_loaded"],
+        "postconditions": ["resource.model_registered", "resource.metrics_registered", "experiment_registered"]
+    },
+
+    "tool.train_vqc_manual": {
+        "name": "tool.train_vqc_manual",
+        "description": "Train VQC purely manually using Cross Entropy + COBYLA.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dataset_resource_id": {"type": "string"},
+                "n_qubits": {"type": "integer", "minimum": 2, "maximum": 10},
+                "max_iter": {"type": "integer"},
+                "seed": {"type": "integer"}
+            },
+            "required": ["dataset_resource_id"]
+        },
+        "output_schema": {
+            "type": "object",
+            "properties": {
+                "experiment_id": EXPERIMENT_ID_SCHEMA,
+                "model_resource": RESOURCE_REF_SCHEMA,
+                "metrics_resource": RESOURCE_REF_SCHEMA,
+                "metrics": {"type": "object"}
+            },
+            "required": ["experiment_id", "model_resource", "metrics_resource", "metrics"]
+        },
+        "preconditions": ["dataset_loaded"],
+        "postconditions": ["resource.model_registered", "resource.metrics_registered", "experiment_registered"]
+    }
 }
 
 

@@ -1,0 +1,33 @@
+{
+  "config": {
+    "optimizer_type": "L-BFGS-B",
+    "ansatz_type": "real_amplitudes",
+    "ansatz_reps": 6,
+    "coupling_strength": 0.5,
+    "transverse_field": 0.5,
+    "max_iter": 100,
+    "n_qubits": 8,
+    "backend": "aer_statevector"
+  },
+  "seed": 123,
+  "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+  "accuracy": 0.53,
+  "f1_score": 0.5288220551378446,
+  "delta_E": 0.24061058482597986,
+  "var_intra_class0": 39.09476124643726,
+  "var_intra_class1": 37.487546765758545,
+  "cohens_d": 0.07134123228431925,
+  "p_value_ttest": 0.7247564324929687,
+  "p_value_permutation": 0.7302697302697303,
+  "training_time_s": 76.519,
+  "inference_time_s": 1.89,
+  "vqe_energies": {
+    "0": -24.40234881669672,
+    "1": -24.314127201724094
+  },
+  "model_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123.pkl",
+  "model_hash": "c59cfacd36f3e861cd053538f2fe35b9d494485a23cb2587198cd79990c0a374",
+  "convergence": true,
+  "status": "COMPLETED",
+  "error": null
+}

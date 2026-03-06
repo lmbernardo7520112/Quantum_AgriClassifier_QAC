@@ -58,6 +58,10 @@ execution_engine = ExecutionEngine(
 from mcp_server.tool_implementations import register_all_tools
 register_all_tools(tool_registry)
 
+# Register additive VQE tool
+from mcp_server.vqe_tool import register_vqe_tool
+register_vqe_tool(tool_registry, schema_registry)
+
 
 # ─────────────────── App Lifecycle ─────────────────────
 
@@ -131,6 +135,8 @@ async def call_tool(request: ToolCallRequest):
         # Structured error — not a crash (Test C)
         return e.to_dict()
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 

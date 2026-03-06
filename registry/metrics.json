@@ -41,8 +41,1011 @@
       },
       "created_at": "2026-03-02T21:41:15-0300",
       "experiment_id": "VQE_PHASE1_BINARY"
+    },
+    "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42": {
+      "resource_id": "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42",
+      "metadata": {
+        "accuracy": 0.69,
+        "f1_score": 0.6656239887822241,
+        "delta_E": 1.1048444158228143,
+        "cohens_d": 0.0436842945177907,
+        "p_ttest": 0.8292620948537243,
+        "p_perm": 0.8401598401598401,
+        "var_intra_class0": 35.863438266094434,
+        "var_intra_class1": 32.28053893481813,
+        "training_time_s": 1.349,
+        "inference_time_s": 0.94,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123": {
+      "resource_id": "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123",
+      "metadata": {
+        "accuracy": 0.65,
+        "f1_score": 0.6457131288591964,
+        "delta_E": 0.8107768397203827,
+        "cohens_d": 0.43335203113227666,
+        "p_ttest": 0.03443451782649162,
+        "p_perm": 0.027972027972027972,
+        "var_intra_class0": 21.66834583612414,
+        "var_intra_class1": 24.359334011394346,
+        "training_time_s": 1.261,
+        "inference_time_s": 0.814,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7": {
+      "resource_id": "metrics-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7",
+      "metadata": {
+        "accuracy": 0.72,
+        "f1_score": 0.7181964573268921,
+        "delta_E": 0.05211843253712445,
+        "cohens_d": 0.1563425108884312,
+        "p_ttest": 0.4408795318217088,
+        "p_perm": 0.44255744255744256,
+        "var_intra_class0": 36.31088749921262,
+        "var_intra_class1": 34.90059607769657,
+        "training_time_s": 1.314,
+        "inference_time_s": 0.944,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42": {
+      "resource_id": "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42",
+      "metadata": {
+        "accuracy": 0.56,
+        "f1_score": 0.45436507936507936,
+        "delta_E": 6.5363412779318795,
+        "cohens_d": 2.7626502073378876,
+        "p_ttest": 2.3410351575948822e-23,
+        "p_perm": 0.000999000999000999,
+        "var_intra_class0": 4.656391952922788,
+        "var_intra_class1": 9.915164255618253,
+        "training_time_s": 1.45,
+        "inference_time_s": 0.986,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123": {
+      "resource_id": "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+      "metadata": {
+        "accuracy": 0.43,
+        "f1_score": 0.3851795922769928,
+        "delta_E": 3.1725243260907767,
+        "cohens_d": 0.9750993942730216,
+        "p_ttest": 5.2763934776218e-06,
+        "p_perm": 0.000999000999000999,
+        "var_intra_class0": 8.894128156673247,
+        "var_intra_class1": 12.472092627955226,
+        "training_time_s": 1.249,
+        "inference_time_s": 0.926,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7": {
+      "resource_id": "metrics-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7",
+      "metadata": {
+        "accuracy": 0.59,
+        "f1_score": 0.5866518802298619,
+        "delta_E": 0.720829951887648,
+        "cohens_d": 0.5388637315234894,
+        "p_ttest": 0.009377926067291643,
+        "p_perm": 0.00999000999000999,
+        "var_intra_class0": 4.5700737798566164,
+        "var_intra_class1": 16.309313751105268,
+        "training_time_s": 1.399,
+        "inference_time_s": 1.29,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42",
+      "metadata": {
+        "accuracy": 0.49,
+        "f1_score": 0.4899489948994899,
+        "delta_E": 0.2739069337141409,
+        "cohens_d": 0.14214302638000487,
+        "p_ttest": 0.48336911991138937,
+        "p_perm": 0.4905094905094905,
+        "var_intra_class0": 38.13291220140974,
+        "var_intra_class1": 35.881463550927144,
+        "training_time_s": 49.309,
+        "inference_time_s": 1.423,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123",
+      "metadata": {
+        "accuracy": 0.58,
+        "f1_score": 0.5784825371336813,
+        "delta_E": 0.6210140948223852,
+        "cohens_d": 0.23049583198902185,
+        "p_ttest": 0.2567098337982615,
+        "p_perm": 0.2647352647352647,
+        "var_intra_class0": 37.511193463810564,
+        "var_intra_class1": 32.165580954485755,
+        "training_time_s": 60.786,
+        "inference_time_s": 2.813,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7",
+      "metadata": {
+        "accuracy": 0.71,
+        "f1_score": 0.7033248081841432,
+        "delta_E": 2.8751700398314526,
+        "cohens_d": 0.3115639200131795,
+        "p_ttest": 0.12646322655119535,
+        "p_perm": 0.13286713286713286,
+        "var_intra_class0": 69.89266519778113,
+        "var_intra_class1": 41.65321634080695,
+        "training_time_s": 61.991,
+        "inference_time_s": 1.362,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42",
+      "metadata": {
+        "accuracy": 0.71,
+        "f1_score": 0.7050147492625368,
+        "delta_E": 3.1064542307400984,
+        "cohens_d": 0.22998775379661118,
+        "p_ttest": 0.25773659101743696,
+        "p_perm": 0.25674325674325676,
+        "var_intra_class0": 45.853466531909504,
+        "var_intra_class1": 45.998525228100455,
+        "training_time_s": 80.382,
+        "inference_time_s": 1.529,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+      "metadata": {
+        "accuracy": 0.53,
+        "f1_score": 0.5288220551378446,
+        "delta_E": 0.24061058482597986,
+        "cohens_d": 0.07134123228431925,
+        "p_ttest": 0.7247564324929687,
+        "p_perm": 0.7302697302697303,
+        "var_intra_class0": 39.09476124643726,
+        "var_intra_class1": 37.487546765758545,
+        "training_time_s": 76.519,
+        "inference_time_s": 1.89,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7",
+      "metadata": {
+        "accuracy": 0.65,
+        "f1_score": 0.6491228070175439,
+        "delta_E": 0.08730583424934935,
+        "cohens_d": 0.22414979776648475,
+        "p_ttest": 0.2699450515909835,
+        "p_perm": 0.2777222777222777,
+        "var_intra_class0": 36.667676700815626,
+        "var_intra_class1": 32.70116080396442,
+        "training_time_s": 75.495,
+        "inference_time_s": 1.18,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42",
+      "metadata": {
+        "accuracy": 0.52,
+        "f1_score": 0.52,
+        "delta_E": 1.923554768002525,
+        "cohens_d": 0.12973849998289627,
+        "p_ttest": 0.5222719500948234,
+        "p_perm": 0.5304695304695305,
+        "var_intra_class0": 149.76626711502894,
+        "var_intra_class1": 178.64641117574567,
+        "training_time_s": 68.802,
+        "inference_time_s": 1.683,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123",
+      "metadata": {
+        "accuracy": 0.67,
+        "f1_score": 0.6691729323308272,
+        "delta_E": 0.6242821705306199,
+        "cohens_d": 0.08040561936024226,
+        "p_ttest": 0.6915068908132977,
+        "p_perm": 0.6803196803196803,
+        "var_intra_class0": 142.3986832118077,
+        "var_intra_class1": 156.16711418012437,
+        "training_time_s": 76.421,
+        "inference_time_s": 1.735,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7": {
+      "resource_id": "metrics-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7",
+      "metadata": {
+        "accuracy": 0.62,
+        "f1_score": 0.6175523349436393,
+        "delta_E": 2.237498691110659,
+        "cohens_d": 0.21255414963709598,
+        "p_ttest": 0.2953771256480842,
+        "p_perm": 0.3046953046953047,
+        "var_intra_class0": 143.01188863490617,
+        "var_intra_class1": 178.40566029305165,
+        "training_time_s": 79.689,
+        "inference_time_s": 1.102,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "dataset-43197060": {
+      "resource_id": "dataset-43197060",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T14:36:36-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-e1901220",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "bfb797407ce669534d53b39a78ee78ce97e1d3ca66cc3306e2bf77f14efd2302",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "dataset-9ef1e24b": {
+      "resource_id": "dataset-9ef1e24b",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T15:45:53-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-c800247e",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-1ddae716": {
+      "resource_id": "metrics-1ddae716",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T15:45:54-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-2baabedb",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.319,
+          "inference_time_s": 0.022
+        }
+      }
+    },
+    "metrics-36f2a603": {
+      "resource_id": "metrics-36f2a603",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T15:47:23-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-ade52413",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 52.543,
+          "inference_time_s": 36.393
+        }
+      }
+    },
+    "dataset-072e7b66": {
+      "resource_id": "dataset-072e7b66",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T20:09:20-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-da3ab133",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-5e8c773b": {
+      "resource_id": "metrics-5e8c773b",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T20:09:20-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-827a332e",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.063,
+          "inference_time_s": 0.009
+        }
+      }
+    },
+    "metrics-2303cd60": {
+      "resource_id": "metrics-2303cd60",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T20:10:01-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-26ab46d0",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.386,
+          "inference_time_s": 16.752
+        }
+      }
+    },
+    "dataset-e79b513b": {
+      "resource_id": "dataset-e79b513b",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T20:42:24-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-68526a2e",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-205a5645": {
+      "resource_id": "metrics-205a5645",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T20:42:24-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-45eb46d4",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.118,
+          "inference_time_s": 0.008
+        }
+      }
+    },
+    "metrics-4a7be583": {
+      "resource_id": "metrics-4a7be583",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T20:43:05-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-7a40650e",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.153,
+          "inference_time_s": 16.447
+        }
+      }
+    },
+    "metrics-a0dcddf4": {
+      "resource_id": "metrics-a0dcddf4",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T20:43:39-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-6edd4fcf",
+      "metadata": {
+        "model_type": "vqc",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.4791666666666667,
+          "f1_macro": 0.4791666666666667,
+          "f1_weighted": 0.4791666666666667,
+          "precision": 0.5,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "training_time_s": 33.296,
+          "inference_time_s": 0.217
+        }
+      }
+    },
+    "dataset-5ff29bf7": {
+      "resource_id": "dataset-5ff29bf7",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T21:15:29-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-f3867530",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-b6202ea1": {
+      "resource_id": "metrics-b6202ea1",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:15:29-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-a3433f69",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.156,
+          "inference_time_s": 0.008
+        }
+      }
+    },
+    "metrics-e40db5ca": {
+      "resource_id": "metrics-e40db5ca",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:16:11-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-1ca071b5",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 25.007,
+          "inference_time_s": 17.075
+        }
+      }
+    },
+    "metrics-62a050e2": {
+      "resource_id": "metrics-62a050e2",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:16:46-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-d736f079",
+      "metadata": {
+        "model_type": "vqc",
+        "metrics": {
+          "accuracy": 0.75,
+          "f1_score": 0.7493734335839599,
+          "f1_macro": 0.7493734335839599,
+          "f1_weighted": 0.7493734335839599,
+          "precision": 0.7525252525252526,
+          "recall": 0.75,
+          "confusion_matrix": [
+            [
+              8,
+              2
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "training_time_s": 34.606,
+          "inference_time_s": 0.229
+        }
+      }
+    },
+    "dataset-60737dfe": {
+      "resource_id": "dataset-60737dfe",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T21:36:08-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-b11edb1d",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-86b2ae15": {
+      "resource_id": "metrics-86b2ae15",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:36:08-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-b7e32af7",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.081,
+          "inference_time_s": 0.013
+        }
+      }
+    },
+    "metrics-f7bd651f": {
+      "resource_id": "metrics-f7bd651f",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:36:50-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-9c722f3a",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.662,
+          "inference_time_s": 16.876
+        }
+      }
+    },
+    "metrics-1d40787b": {
+      "resource_id": "metrics-1d40787b",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T21:37:24-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-58c044e3",
+      "metadata": {
+        "model_type": "vqc",
+        "metrics": {
+          "accuracy": 0.45,
+          "f1_score": 0.4133333333333334,
+          "f1_macro": 0.41333333333333333,
+          "f1_weighted": 0.4133333333333334,
+          "precision": 0.4333333333333334,
+          "recall": 0.45,
+          "confusion_matrix": [
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              2
+            ]
+          ],
+          "training_time_s": 34.507,
+          "inference_time_s": 0.229
+        }
+      }
+    },
+    "dataset-a54d67a9": {
+      "resource_id": "dataset-a54d67a9",
+      "resource_type": "resource.dataset",
+      "timestamp": "2026-03-05T22:25:46-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-42a30050",
+      "metadata": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        },
+        "dataset": "eurosat_rgb",
+        "img_size": 64,
+        "total_samples": 100,
+        "seed": 42
+      }
+    },
+    "metrics-081fccc9": {
+      "resource_id": "metrics-081fccc9",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T22:25:46-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-b1a8cfed",
+      "metadata": {
+        "model_type": "svm",
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.157,
+          "inference_time_s": 0.013
+        }
+      }
+    },
+    "metrics-760b6485": {
+      "resource_id": "metrics-760b6485",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T22:26:29-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-810581fa",
+      "metadata": {
+        "model_type": "qsvm",
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.646,
+          "inference_time_s": 17.259
+        }
+      }
+    },
+    "metrics-c7f5bb86": {
+      "resource_id": "metrics-c7f5bb86",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T22:27:03-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-0b7fa5ef",
+      "metadata": {
+        "model_type": "vqc",
+        "metrics": {
+          "accuracy": 0.35,
+          "f1_score": 0.3350383631713555,
+          "f1_macro": 0.3350383631713555,
+          "f1_weighted": 0.3350383631713555,
+          "precision": 0.33516483516483514,
+          "recall": 0.35,
+          "confusion_matrix": [
+            [
+              5,
+              5
+            ],
+            [
+              8,
+              2
+            ]
+          ],
+          "training_time_s": 34.394,
+          "inference_time_s": 0.226
+        }
+      }
+    },
+    "metrics-9a854798": {
+      "resource_id": "metrics-9a854798",
+      "resource_type": "resource.metrics",
+      "timestamp": "2026-03-05T22:27:05-0300",
+      "file_path": null,
+      "file_hash": null,
+      "experiment_id": "exp-f0abcbc6",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "metrics": {
+          "accuracy": 0.65,
+          "f1_score": 0.6266666666666666,
+          "f1_macro": 0.6266666666666667,
+          "f1_weighted": 0.6266666666666666,
+          "precision": 0.7,
+          "recall": 0.65,
+          "confusion_matrix": [
+            [
+              4,
+              6
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.964,
+          "inference_time_s": 0.52,
+          "vqe_energies": {
+            "0": -35.545425626420396,
+            "1": -30.80438192640187
+          },
+          "mean_vqe_energy": -33.174903776411135
+        },
+        "vqe_energies": {
+          "0": -35.545425626420396,
+          "1": -30.80438192640187
+        }
+      }
     }
   },
   "version": "1.0.0",
-  "last_updated": "2026-03-02T21:41:15-0300"
+  "last_updated": "2026-03-05T22:27:05-0300"
 }

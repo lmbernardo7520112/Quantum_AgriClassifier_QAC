@@ -12,8 +12,579 @@
       },
       "created_at": "2026-03-02T21:41:15-0300",
       "experiment_id": "VQE_PHASE1_BINARY"
+    },
+    "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42": {
+      "resource_id": "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42.pkl",
+      "file_hash": "695aa31b1a916419efacacbd717a60c34c3e78345cbcbbe27f08f47e79dd6098",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "cobyla",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 42,
+        "accuracy": 0.69,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123": {
+      "resource_id": "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123.pkl",
+      "file_hash": "600194149dec93b6e259231731e4c5056be8aebbe6dc051c5619daa0d636eeb6",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "cobyla",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 123,
+        "accuracy": 0.65,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7": {
+      "resource_id": "model-VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7.pkl",
+      "file_hash": "a752142d80bd0f1ece17a2ae5cc3ed6ae2327bb735cb969600245e95195a5fce",
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "cobyla",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 7,
+        "accuracy": 0.72,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42": {
+      "resource_id": "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42.pkl",
+      "file_hash": "5c938e2d23500441e46d2b49007a893718066c77f8525f86a633fed1a7460105",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "spsa",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 42,
+        "accuracy": 0.56,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123": {
+      "resource_id": "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123.pkl",
+      "file_hash": "78e5681c2c3a7a1b3f914a9755f8adef590d0935c16186979f663b60c1fa911b",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "spsa",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 123,
+        "accuracy": 0.43,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7": {
+      "resource_id": "model-VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7.pkl",
+      "file_hash": "7b026f49d7c71545f2412c20d84f42abdac2006c19503b43a4006bfc887b7b77",
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "spsa",
+        "ansatz_reps": 2,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 7,
+        "accuracy": 0.59,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42.pkl",
+      "file_hash": "ae895c85a231c0c5b887e76294a6deee0ef48620d245365d7c2239e20c796eb6",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 4,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 42,
+        "accuracy": 0.49,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123.pkl",
+      "file_hash": "0377047ded56a4804bdb162f455b62fbfcc3facfc4b3caec09c476df6902eea5",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 4,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 123,
+        "accuracy": 0.58,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7.pkl",
+      "file_hash": "f185d94fd01f2569ed6297b4aca93213b59745de787527ef0cb30b0af5ad1653",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 4,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 7,
+        "accuracy": 0.71,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42.pkl",
+      "file_hash": "2bdec003e35d88e94419913a79c5f08d0390fbb1e014d9e958e52e2dbb7f04a3",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 42,
+        "accuracy": 0.71,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123.pkl",
+      "file_hash": "c59cfacd36f3e861cd053538f2fe35b9d494485a23cb2587198cd79990c0a374",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 123,
+        "accuracy": 0.53,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7.pkl",
+      "file_hash": "f684c1caa266ec5c6ee16cbe77a849c133e19df9880a968667118b2da0aa704a",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "seed": 7,
+        "accuracy": 0.65,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42.pkl",
+      "file_hash": "ca2795ee5ac2abe91e02b2caba43f35f667364cbf905cd6ac51203f4da53094d",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "seed": 42,
+        "accuracy": 0.52,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123.pkl",
+      "file_hash": "e723e2281758ca61008e450cf219e2d7228250493c15c8980eed4ecf9691d6b6",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "seed": 123,
+        "accuracy": 0.67,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7": {
+      "resource_id": "model-VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-03T10:37:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7.pkl",
+      "file_hash": "e214df1f251763c77c4ad00a3549a78d54408fd569c05cbaaac7da87f74b6092",
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "optimizer": "L-BFGS-B",
+        "ansatz_reps": 6,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "seed": 7,
+        "accuracy": 0.62,
+        "phase": "VQE_PHASE2"
+      }
+    },
+    "model-8cbff841": {
+      "resource_id": "model-8cbff841",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T15:45:54-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-2baabedb.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-2baabedb",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-034fc96f": {
+      "resource_id": "model-034fc96f",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T15:47:23-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-ade52413.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-ade52413",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-516277db": {
+      "resource_id": "model-516277db",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T20:09:20-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-827a332e.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-827a332e",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-73d2f1fd": {
+      "resource_id": "model-73d2f1fd",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T20:10:01-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-26ab46d0.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-26ab46d0",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-9f0faab5": {
+      "resource_id": "model-9f0faab5",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T20:42:24-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-45eb46d4.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-45eb46d4",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-507709af": {
+      "resource_id": "model-507709af",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T20:43:05-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-7a40650e.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-7a40650e",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-2c3c457e": {
+      "resource_id": "model-2c3c457e",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T20:43:39-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/vqc_exp-6edd4fcf.pkl",
+      "file_hash": "2f90b25e30b777b1f46a36b3ea2bc71f4c3ff16c4c05a63a1cb919917d9af598",
+      "experiment_id": "exp-6edd4fcf",
+      "metadata": {
+        "model_type": "vqc",
+        "hyperparameters": {
+          "ansatz": "real_amplitudes",
+          "optimizer": "cobyla",
+          "max_iter": 50,
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-44226575": {
+      "resource_id": "model-44226575",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:15:29-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-a3433f69.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-a3433f69",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-714ac3cc": {
+      "resource_id": "model-714ac3cc",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:16:11-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-1ca071b5.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-1ca071b5",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-6e5f4548": {
+      "resource_id": "model-6e5f4548",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:16:46-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/vqc_exp-d736f079.pkl",
+      "file_hash": "32fbc316fed4f70b4b6ee1713c8bb0c22669732f947f70203a5662e8e675b79d",
+      "experiment_id": "exp-d736f079",
+      "metadata": {
+        "model_type": "vqc",
+        "hyperparameters": {
+          "ansatz": "real_amplitudes",
+          "optimizer": "cobyla",
+          "max_iter": 50,
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-55773a37": {
+      "resource_id": "model-55773a37",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:36:08-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-b7e32af7.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-b7e32af7",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-608c0436": {
+      "resource_id": "model-608c0436",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:36:50-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-9c722f3a.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-9c722f3a",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-356af2ca": {
+      "resource_id": "model-356af2ca",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T21:37:24-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/vqc_exp-58c044e3.pkl",
+      "file_hash": "7c51439a81c73bc4a09eaaced2d3a9a7eac70e1db162ba019723e5ccfb7543a8",
+      "experiment_id": "exp-58c044e3",
+      "metadata": {
+        "model_type": "vqc",
+        "hyperparameters": {
+          "ansatz": "real_amplitudes",
+          "optimizer": "cobyla",
+          "max_iter": 50,
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-45ce23a6": {
+      "resource_id": "model-45ce23a6",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T22:25:46-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/svm_baseline_exp-b1a8cfed.pkl",
+      "file_hash": "dcb8027e12a01305ac590943f7ae3fd7053d12d9d95b3c19f711ee6f1dd39c27",
+      "experiment_id": "exp-b1a8cfed",
+      "metadata": {
+        "model_type": "svm",
+        "hyperparameters": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale",
+          "seed": 42
+        }
+      }
+    },
+    "model-9f7645e1": {
+      "resource_id": "model-9f7645e1",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T22:26:29-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/qsvm_exp-810581fa.pkl",
+      "file_hash": "af5dc71be8575595c5cb86f65bed50129a8a91289a4955c3827dc724ca7be502",
+      "experiment_id": "exp-810581fa",
+      "metadata": {
+        "model_type": "qsvm",
+        "hyperparameters": {
+          "feature_map": "zz",
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-c509be17": {
+      "resource_id": "model-c509be17",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T22:27:03-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/vqc_exp-0b7fa5ef.pkl",
+      "file_hash": "3b4924b8bd8f3da820a13a963305e74a268cce8ce47435facaf7f122a90f5fcd",
+      "experiment_id": "exp-0b7fa5ef",
+      "metadata": {
+        "model_type": "vqc",
+        "hyperparameters": {
+          "ansatz": "real_amplitudes",
+          "optimizer": "cobyla",
+          "max_iter": 50,
+          "n_qubits": 8,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
+    },
+    "model-18e280f4": {
+      "resource_id": "model-18e280f4",
+      "resource_type": "resource.model",
+      "timestamp": "2026-03-05T22:27:05-0300",
+      "file_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/models/vqe_classifier_exp-f0abcbc6.pkl",
+      "file_hash": "401835adacfccb7432691704fec3ff1bf46b8e1dc9b61e1ead290fe18033a6b1",
+      "experiment_id": "exp-f0abcbc6",
+      "metadata": {
+        "model_type": "vqe_classifier",
+        "hyperparameters": {
+          "ansatz": "real_amplitudes",
+          "optimizer": "cobyla",
+          "max_iter": 50,
+          "n_qubits": 8,
+          "coupling_strength": 1.0,
+          "transverse_field": 0.5,
+          "backend": "aer_statevector",
+          "seed": 42
+        }
+      }
     }
   },
   "version": "1.0.0",
-  "last_updated": "2026-03-02T21:41:15-0300"
+  "last_updated": "2026-03-05T22:27:05-0300"
 }

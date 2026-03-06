@@ -1,0 +1,33 @@
+{
+  "config": {
+    "optimizer_type": "cobyla",
+    "ansatz_type": "real_amplitudes",
+    "ansatz_reps": 4,
+    "coupling_strength": 0.5,
+    "transverse_field": 0.5,
+    "max_iter": 100,
+    "n_qubits": 8,
+    "backend": "aer_statevector"
+  },
+  "seed": 123,
+  "experiment_id": "VQE_PHASE2_cobyla_reps4_g0.5_h0.5_s123",
+  "accuracy": 0.65,
+  "f1_score": 0.6457131288591964,
+  "delta_E": 0.0,
+  "var_intra_class0": 0.0,
+  "var_intra_class1": 0.0,
+  "cohens_d": 0.0,
+  "p_value_ttest": 1.0,
+  "p_value_permutation": 1.0,
+  "training_time_s": 1.324,
+  "inference_time_s": 1.03,
+  "vqe_energies": {
+    "0": -19.629527772299664,
+    "1": -20.341964715400465
+  },
+  "model_path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps4_g0.5_h0.5_s123.pkl",
+  "model_hash": "600194149dec93b6e259231731e4c5056be8aebbe6dc051c5619daa0d636eeb6",
+  "convergence": true,
+  "status": "FAILED",
+  "error": "Mismatching number of values and parameters. For partial binding please pass a mapping of {parameter: value} pairs."
+}

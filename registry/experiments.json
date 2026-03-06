@@ -230,8 +230,3070 @@
           "id": "VQE_PHASE1_BINARY"
         }
       ]
+    },
+    "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42": {
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "cobyla",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.69,
+        "f1_score": 0.6656239887822241,
+        "delta_E": 1.1048444158228143,
+        "cohens_d": 0.0436842945177907,
+        "p_ttest": 0.8292620948537243,
+        "p_perm": 0.8401598401598401,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -20.869005824781034,
+          "1": -20.627625039844865
+        },
+        "training_time_s": 1.349
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s42"
+        }
+      ]
+    },
+    "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123": {
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 123,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "cobyla",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.65,
+        "f1_score": 0.6457131288591964,
+        "delta_E": 0.8107768397203827,
+        "cohens_d": 0.43335203113227666,
+        "p_ttest": 0.03443451782649162,
+        "p_perm": 0.027972027972027972,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -19.629527772299664,
+          "1": -20.341964715400465
+        },
+        "training_time_s": 1.261
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 123,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s123"
+        }
+      ]
+    },
+    "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7": {
+      "experiment_id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 7,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "cobyla",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.72,
+        "f1_score": 0.7181964573268921,
+        "delta_E": 0.05211843253712445,
+        "cohens_d": 0.1563425108884312,
+        "p_ttest": 0.4408795318217088,
+        "p_perm": 0.44255744255744256,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -21.738177447189337,
+          "1": -19.712422405093296
+        },
+        "training_time_s": 1.314
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 7,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_cobyla_reps2_g0.5_h0.5_s7"
+        }
+      ]
+    },
+    "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42": {
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "spsa",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.56,
+        "f1_score": 0.45436507936507936,
+        "delta_E": 6.5363412779318795,
+        "cohens_d": 2.7626502073378876,
+        "p_ttest": 2.3410351575948822e-23,
+        "p_perm": 0.000999000999000999,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -5.714292582454921,
+          "1": -11.421112515545476
+        },
+        "training_time_s": 1.45
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s42"
+        }
+      ]
+    },
+    "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123": {
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 123,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "spsa",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.43,
+        "f1_score": 0.3851795922769928,
+        "delta_E": 3.1725243260907767,
+        "cohens_d": 0.9750993942730216,
+        "p_ttest": 5.2763934776218e-06,
+        "p_perm": 0.000999000999000999,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -7.0338097121974466,
+          "1": -12.328603876010405
+        },
+        "training_time_s": 1.249
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 123,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s123"
+        }
+      ]
+    },
+    "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7": {
+      "experiment_id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 7,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 2,
+        "optimizer": "spsa",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.59,
+        "f1_score": 0.5866518802298619,
+        "delta_E": 0.720829951887648,
+        "cohens_d": 0.5388637315234894,
+        "p_ttest": 0.009377926067291643,
+        "p_perm": 0.00999000999000999,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -7.827246840395874,
+          "1": -8.633493883935884
+        },
+        "training_time_s": 1.399
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 7,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_spsa_reps2_g0.5_h0.5_s7"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 4,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.49,
+        "f1_score": 0.4899489948994899,
+        "delta_E": 0.2739069337141409,
+        "cohens_d": 0.14214302638000487,
+        "p_ttest": 0.48336911991138937,
+        "p_perm": 0.4905094905094905,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.473941332128042,
+          "1": -24.241161382445853
+        },
+        "training_time_s": 49.309
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s42"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 123,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 4,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.58,
+        "f1_score": 0.5784825371336813,
+        "delta_E": 0.6210140948223852,
+        "cohens_d": 0.23049583198902185,
+        "p_ttest": 0.2567098337982615,
+        "p_perm": 0.2647352647352647,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.353942807982246,
+          "1": -24.288152109923203
+        },
+        "training_time_s": 60.786
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 123,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s123"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 7,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 4,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.71,
+        "f1_score": 0.7033248081841432,
+        "delta_E": 2.8751700398314526,
+        "cohens_d": 0.3115639200131795,
+        "p_ttest": 0.12646322655119535,
+        "p_perm": 0.13286713286713286,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.308551023068336,
+          "1": -24.138963292712237
+        },
+        "training_time_s": 61.991
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 7,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps4_g0.5_h0.5_s7"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.71,
+        "f1_score": 0.7050147492625368,
+        "delta_E": 3.1064542307400984,
+        "cohens_d": 0.22998775379661118,
+        "p_ttest": 0.25773659101743696,
+        "p_perm": 0.25674325674325676,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.10531479269948,
+          "1": -24.285081545916533
+        },
+        "training_time_s": 80.382
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s42"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 123,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.53,
+        "f1_score": 0.5288220551378446,
+        "delta_E": 0.24061058482597986,
+        "cohens_d": 0.07134123228431925,
+        "p_ttest": 0.7247564324929687,
+        "p_perm": 0.7302697302697303,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.40234881669672,
+          "1": -24.314127201724094
+        },
+        "training_time_s": 76.519
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 123,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s123"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 7,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 0.5,
+        "transverse_field": 0.5,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.65,
+        "f1_score": 0.6491228070175439,
+        "delta_E": 0.08730583424934935,
+        "cohens_d": 0.22414979776648475,
+        "p_ttest": 0.2699450515909835,
+        "p_perm": 0.2777222777222777,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -24.388695044949692,
+          "1": -24.024320030152047
+        },
+        "training_time_s": 75.495
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 7,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g0.5_h0.5_s7"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.52,
+        "f1_score": 0.52,
+        "delta_E": 1.923554768002525,
+        "cohens_d": 0.12973849998289627,
+        "p_ttest": 0.5222719500948234,
+        "p_perm": 0.5304695304695305,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -47.192375888870224,
+          "1": -45.1576868213654
+        },
+        "training_time_s": 68.802
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 42,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s42"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 123,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.67,
+        "f1_score": 0.6691729323308272,
+        "delta_E": 0.6242821705306199,
+        "cohens_d": 0.08040561936024226,
+        "p_ttest": 0.6915068908132977,
+        "p_perm": 0.6803196803196803,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -47.32357792338101,
+          "1": -47.168048744166434
+        },
+        "training_time_s": 76.421
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 123,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s123"
+        }
+      ]
+    },
+    "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7": {
+      "experiment_id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "plantvillage",
+        "classes_filter": [
+          "Tomato___healthy",
+          "Tomato___Bacterial_spot"
+        ],
+        "max_samples": 500,
+        "n_qubits": 8,
+        "seed": 7,
+        "ansatz": "real_amplitudes",
+        "ansatz_reps": 6,
+        "optimizer": "L-BFGS-B",
+        "max_iter": 100,
+        "coupling_strength": 1.0,
+        "transverse_field": 1.0,
+        "backend": "aer_statevector",
+        "phase": "VQE_PHASE2"
+      },
+      "output": {
+        "accuracy": 0.62,
+        "f1_score": 0.6175523349436393,
+        "delta_E": 2.237498691110659,
+        "cohens_d": 0.21255414963709598,
+        "p_ttest": 0.2953771256480842,
+        "p_perm": 0.3046953046953047,
+        "convergence": true,
+        "vqe_energies": {
+          "0": -47.11904952757253,
+          "1": -47.056926062734156
+        },
+        "training_time_s": 79.689
+      },
+      "error": null,
+      "started_at": "2026-03-03T10:37:11-0300",
+      "completed_at": "2026-03-03T10:37:11-0300",
+      "context": {
+        "seed": 7,
+        "dataset_hash": "5f4e6c3697124410f2a999dee06baa9585dc76523c9bbad294c5708cb4ab23d9",
+        "backend": "aer_statevector"
+      },
+      "resources_created": [
+        {
+          "type": "resource.model",
+          "path": "/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/models/vqe_classifier_VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7.pkl"
+        },
+        {
+          "type": "resource.metrics",
+          "id": "VQE_PHASE2_L-BFGS-B_reps6_g1.0_h1.0_s7"
+        }
+      ]
+    },
+    "exp-a20e40e3": {
+      "experiment_id": "exp-a20e40e3",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T10:40:38-0300"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-0b5a5b4e": {
+      "experiment_id": "exp-0b5a5b4e",
+      "tool_name": "tool.load_dataset",
+      "status": "FAILED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 500
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "[Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 91, in tool_load_dataset\n    result = load_dataset(dataset_name, dataset_path, seed=seed, max_samples=max_samples)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 484, in load_dataset\n    return load_eurosat_rgb(dataset_path, seed=seed, max_samples=max_samples, img_size=img_size)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 148, in load_eurosat_rgb\n    class_names = sorted([d.name for d in dataset_path.iterdir() if d.is_dir()])\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1058, in iterdir\n    for name in os.listdir(self):\n                ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'\n"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {
+        "context_id": "exp-0b5a5b4e",
+        "timestamp": "2026-03-05T10:40:38-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-0637c6b1": {
+      "experiment_id": "exp-0637c6b1",
+      "tool_name": "tool.run_baseline",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.run_baseline",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.run_baseline'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:40:38-0300"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-73d1b144": {
+      "experiment_id": "exp-73d1b144",
+      "tool_name": "tool.train_qsvm",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_qsvm",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_qsvm'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:40:38-0300"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-6545888e": {
+      "experiment_id": "exp-6545888e",
+      "tool_name": "tool.train_vqc",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_vqc",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_vqc'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:40:38-0300"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-e34b4830": {
+      "experiment_id": "exp-e34b4830",
+      "tool_name": "tool.compare_models",
+      "status": "FAILED",
+      "input": {
+        "model_resource_ids": [
+          null,
+          null,
+          null
+        ]
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.compare_models",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.compare_models'.",
+        "details": {
+          "validation_errors": [
+            "$.model_resource_ids[0]: None is not of type 'string'",
+            "$.model_resource_ids[1]: None is not of type 'string'",
+            "$.model_resource_ids[2]: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:40:38-0300"
+      },
+      "started_at": "2026-03-05T10:40:38-0300",
+      "completed_at": "2026-03-05T10:40:38-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-5fb1b79c": {
+      "experiment_id": "exp-5fb1b79c",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T10:53:43-0300"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-76ac1813": {
+      "experiment_id": "exp-76ac1813",
+      "tool_name": "tool.load_dataset",
+      "status": "FAILED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 500
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "[Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 91, in tool_load_dataset\n    result = load_dataset(dataset_name, dataset_path, seed=seed, max_samples=max_samples)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 484, in load_dataset\n    return load_eurosat_rgb(dataset_path, seed=seed, max_samples=max_samples, img_size=img_size)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 148, in load_eurosat_rgb\n    class_names = sorted([d.name for d in dataset_path.iterdir() if d.is_dir()])\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1058, in iterdir\n    for name in os.listdir(self):\n                ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'\n"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {
+        "context_id": "exp-76ac1813",
+        "timestamp": "2026-03-05T10:53:43-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-f129c827": {
+      "experiment_id": "exp-f129c827",
+      "tool_name": "tool.run_baseline",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.run_baseline",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.run_baseline'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:53:43-0300"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-599ccee6": {
+      "experiment_id": "exp-599ccee6",
+      "tool_name": "tool.train_qsvm",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_qsvm",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_qsvm'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:53:43-0300"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-a8ed1418": {
+      "experiment_id": "exp-a8ed1418",
+      "tool_name": "tool.train_vqc",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_vqc",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_vqc'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:53:43-0300"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-9f69cc87": {
+      "experiment_id": "exp-9f69cc87",
+      "tool_name": "tool.compare_models",
+      "status": "FAILED",
+      "input": {
+        "model_resource_ids": [
+          null,
+          null,
+          null
+        ]
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.compare_models",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.compare_models'.",
+        "details": {
+          "validation_errors": [
+            "$.model_resource_ids[0]: None is not of type 'string'",
+            "$.model_resource_ids[1]: None is not of type 'string'",
+            "$.model_resource_ids[2]: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T10:53:43-0300"
+      },
+      "started_at": "2026-03-05T10:53:43-0300",
+      "completed_at": "2026-03-05T10:53:43-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-72f95e29": {
+      "experiment_id": "exp-72f95e29",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T11:00:34-0300"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-c3793ad9": {
+      "experiment_id": "exp-c3793ad9",
+      "tool_name": "tool.load_dataset",
+      "status": "FAILED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 500
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "[Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 91, in tool_load_dataset\n    result = load_dataset(dataset_name, dataset_path, seed=seed, max_samples=max_samples)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 484, in load_dataset\n    return load_eurosat_rgb(dataset_path, seed=seed, max_samples=max_samples, img_size=img_size)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/data_loader.py\", line 148, in load_eurosat_rgb\n    class_names = sorted([d.name for d in dataset_path.iterdir() if d.is_dir()])\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1058, in iterdir\n    for name in os.listdir(self):\n                ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/leonardomaximinobernardo/Downloads/quantum_camp_tech/DataSetEuroSat/EuroSAT_RGB'\n"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {
+        "context_id": "exp-c3793ad9",
+        "timestamp": "2026-03-05T11:00:34-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-c69ef4ac": {
+      "experiment_id": "exp-c69ef4ac",
+      "tool_name": "tool.run_baseline",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.run_baseline",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.run_baseline'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T11:00:34-0300"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-93597bef": {
+      "experiment_id": "exp-93597bef",
+      "tool_name": "tool.train_qsvm",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_qsvm",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_qsvm'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T11:00:34-0300"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-28ea8157": {
+      "experiment_id": "exp-28ea8157",
+      "tool_name": "tool.train_vqc",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": null,
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_vqc",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_vqc'.",
+        "details": {
+          "validation_errors": [
+            "$.dataset_resource_id: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T11:00:34-0300"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-3bb06fa4": {
+      "experiment_id": "exp-3bb06fa4",
+      "tool_name": "tool.compare_models",
+      "status": "FAILED",
+      "input": {
+        "model_resource_ids": [
+          null,
+          null,
+          null
+        ]
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.compare_models",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.compare_models'.",
+        "details": {
+          "validation_errors": [
+            "$.model_resource_ids[0]: None is not of type 'string'",
+            "$.model_resource_ids[1]: None is not of type 'string'",
+            "$.model_resource_ids[2]: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T11:00:34-0300"
+      },
+      "started_at": "2026-03-05T11:00:34-0300",
+      "completed_at": "2026-03-05T11:00:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-2f45d319": {
+      "experiment_id": "exp-2f45d319",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T14:36:34-0300"
+      },
+      "started_at": "2026-03-05T14:36:34-0300",
+      "completed_at": "2026-03-05T14:36:34-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-e1901220": {
+      "experiment_id": "exp-e1901220",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-e1901220",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-43197060"
+        },
+        "dataset_hash": "bfb797407ce669534d53b39a78ee78ce97e1d3ca66cc3306e2bf77f14efd2302",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T14:36:34-0300",
+      "completed_at": "2026-03-05T14:36:36-0300",
+      "context": {
+        "context_id": "exp-e1901220",
+        "timestamp": "2026-03-05T14:36:34-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-e918f02a": {
+      "experiment_id": "exp-e918f02a",
+      "tool_name": "tool.run_baseline",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": "dataset-43197060",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "The number of classes has to be greater than one; got 1 class",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 144, in tool_run_baseline\n    result = train_svm(dataset, seed=seed, models_dir=models_dir, experiment_id=experiment_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/classical/baseline.py\", line 65, in train_svm\n    svm.fit(dataset.X_train, dataset.y_train)\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/base.py\", line 1336, in wrapper\n    return fit_method(estimator, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/svm/_base.py\", line 215, in fit\n    y = self._validate_targets(y)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/svm/_base.py\", line 759, in _validate_targets\n    raise ValueError(\nValueError: The number of classes has to be greater than one; got 1 class\n"
+      },
+      "started_at": "2026-03-05T14:36:36-0300",
+      "completed_at": "2026-03-05T14:36:36-0300",
+      "context": {
+        "context_id": "exp-e918f02a",
+        "timestamp": "2026-03-05T14:36:36-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-9b40ba2f": {
+      "experiment_id": "exp-9b40ba2f",
+      "tool_name": "tool.train_qsvm",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": "dataset-43197060",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "The number of classes has to be greater than one; got 1 class",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 196, in tool_train_qsvm\n    result = train_qsvm(dataset, n_qubits=n_qubits, seed=seed, models_dir=models_dir, experiment_id=experiment_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/quantum/qsvm.py\", line 67, in train_qsvm\n    svm.fit(kernel_train, dataset.y_train)\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/base.py\", line 1336, in wrapper\n    return fit_method(estimator, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/svm/_base.py\", line 215, in fit\n    y = self._validate_targets(y)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/venv/lib/python3.12/site-packages/sklearn/svm/_base.py\", line 759, in _validate_targets\n    raise ValueError(\nValueError: The number of classes has to be greater than one; got 1 class\n"
+      },
+      "started_at": "2026-03-05T14:36:36-0300",
+      "completed_at": "2026-03-05T14:37:31-0300",
+      "context": {
+        "context_id": "exp-9b40ba2f",
+        "timestamp": "2026-03-05T14:36:36-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-8776bb26": {
+      "experiment_id": "exp-8776bb26",
+      "tool_name": "tool.train_vqc",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": "dataset-43197060",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "error_type": "UNEXPECTED_ERROR",
+        "message": "No module named 'qiskit_algorithms'",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 151, in execute\n    result = await asyncio.get_event_loop().run_in_executor(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/execution_engine.py\", line 153, in <lambda>\n    lambda: tool_fn(\n            ^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/mcp_server/tool_implementations.py\", line 241, in tool_train_vqc\n    result = train_vqc(\n             ^^^^^^^^^^\n  File \"/home/leonardomaximinobernardo/My_projects/Quantum_AgriClassifier_QAC/quantum/vqc.py\", line 46, in train_vqc\n    from qiskit_algorithms.optimizers import COBYLA, SPSA\nModuleNotFoundError: No module named 'qiskit_algorithms'\n"
+      },
+      "started_at": "2026-03-05T14:37:31-0300",
+      "completed_at": "2026-03-05T14:37:31-0300",
+      "context": {
+        "context_id": "exp-8776bb26",
+        "timestamp": "2026-03-05T14:37:31-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-f7019f2c": {
+      "experiment_id": "exp-f7019f2c",
+      "tool_name": "tool.compare_models",
+      "status": "FAILED",
+      "input": {
+        "model_resource_ids": [
+          null,
+          null,
+          null
+        ]
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.compare_models",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.compare_models'.",
+        "details": {
+          "validation_errors": [
+            "$.model_resource_ids[0]: None is not of type 'string'",
+            "$.model_resource_ids[1]: None is not of type 'string'",
+            "$.model_resource_ids[2]: None is not of type 'string'"
+          ]
+        },
+        "timestamp": "2026-03-05T14:37:31-0300"
+      },
+      "started_at": "2026-03-05T14:37:31-0300",
+      "completed_at": "2026-03-05T14:37:31-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-12b781c9": {
+      "experiment_id": "exp-12b781c9",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T15:45:52-0300"
+      },
+      "started_at": "2026-03-05T15:45:52-0300",
+      "completed_at": "2026-03-05T15:45:52-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-c800247e": {
+      "experiment_id": "exp-c800247e",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-c800247e",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-9ef1e24b"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T15:45:52-0300",
+      "completed_at": "2026-03-05T15:45:53-0300",
+      "context": {
+        "context_id": "exp-c800247e",
+        "timestamp": "2026-03-05T15:45:52-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-2baabedb": {
+      "experiment_id": "exp-2baabedb",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-9ef1e24b",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-2baabedb",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-8cbff841"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-1ddae716"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.319,
+          "inference_time_s": 0.022
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T15:45:53-0300",
+      "completed_at": "2026-03-05T15:45:54-0300",
+      "context": {
+        "context_id": "exp-2baabedb",
+        "timestamp": "2026-03-05T15:45:53-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-ade52413": {
+      "experiment_id": "exp-ade52413",
+      "tool_name": "tool.train_qsvm",
+      "status": "RUNNING",
+      "input": {
+        "dataset_resource_id": "dataset-9ef1e24b",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": null,
+      "started_at": "2026-03-05T15:45:54-0300",
+      "completed_at": null,
+      "context": {
+        "context_id": "exp-ade52413",
+        "timestamp": "2026-03-05T15:45:54-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-2bc2f47f": {
+      "experiment_id": "exp-2bc2f47f",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T20:09:19-0300"
+      },
+      "started_at": "2026-03-05T20:09:19-0300",
+      "completed_at": "2026-03-05T20:09:19-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-da3ab133": {
+      "experiment_id": "exp-da3ab133",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-da3ab133",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-072e7b66"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:09:19-0300",
+      "completed_at": "2026-03-05T20:09:20-0300",
+      "context": {
+        "context_id": "exp-da3ab133",
+        "timestamp": "2026-03-05T20:09:19-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-827a332e": {
+      "experiment_id": "exp-827a332e",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-072e7b66",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-827a332e",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-516277db"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-5e8c773b"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.063,
+          "inference_time_s": 0.009
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:09:20-0300",
+      "completed_at": "2026-03-05T20:09:20-0300",
+      "context": {
+        "context_id": "exp-827a332e",
+        "timestamp": "2026-03-05T20:09:20-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-26ab46d0": {
+      "experiment_id": "exp-26ab46d0",
+      "tool_name": "tool.train_qsvm",
+      "status": "RUNNING",
+      "input": {
+        "dataset_resource_id": "dataset-072e7b66",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": null,
+      "error": null,
+      "started_at": "2026-03-05T20:09:20-0300",
+      "completed_at": null,
+      "context": {
+        "context_id": "exp-26ab46d0",
+        "timestamp": "2026-03-05T20:09:20-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-6c0588f6": {
+      "experiment_id": "exp-6c0588f6",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T20:42:23-0300"
+      },
+      "started_at": "2026-03-05T20:42:23-0300",
+      "completed_at": "2026-03-05T20:42:23-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-68526a2e": {
+      "experiment_id": "exp-68526a2e",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-68526a2e",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-e79b513b"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:42:23-0300",
+      "completed_at": "2026-03-05T20:42:24-0300",
+      "context": {
+        "context_id": "exp-68526a2e",
+        "timestamp": "2026-03-05T20:42:23-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-45eb46d4": {
+      "experiment_id": "exp-45eb46d4",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-e79b513b",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-45eb46d4",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-9f0faab5"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-205a5645"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.118,
+          "inference_time_s": 0.008
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:42:24-0300",
+      "completed_at": "2026-03-05T20:42:24-0300",
+      "context": {
+        "context_id": "exp-45eb46d4",
+        "timestamp": "2026-03-05T20:42:24-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-7a40650e": {
+      "experiment_id": "exp-7a40650e",
+      "tool_name": "tool.train_qsvm",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-e79b513b",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-7a40650e",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-507709af"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-4a7be583"
+        },
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.153,
+          "inference_time_s": 16.447
+        },
+        "circuit_depth": 1,
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:42:24-0300",
+      "completed_at": "2026-03-05T20:43:05-0300",
+      "context": {
+        "context_id": "exp-7a40650e",
+        "timestamp": "2026-03-05T20:42:24-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-6edd4fcf": {
+      "experiment_id": "exp-6edd4fcf",
+      "tool_name": "tool.train_vqc",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-e79b513b",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": {
+        "experiment_id": "exp-6edd4fcf",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-2c3c457e"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-a0dcddf4"
+        },
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.4791666666666667,
+          "f1_macro": 0.4791666666666667,
+          "f1_weighted": 0.4791666666666667,
+          "precision": 0.5,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "training_time_s": 33.296,
+          "inference_time_s": 0.217
+        },
+        "training_history": [],
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:43:05-0300",
+      "completed_at": "2026-03-05T20:43:39-0300",
+      "context": {
+        "context_id": "exp-6edd4fcf",
+        "timestamp": "2026-03-05T20:43:05-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-850969ad": {
+      "experiment_id": "exp-850969ad",
+      "tool_name": "tool.compare_models",
+      "status": "COMPLETED_WITH_WARNINGS",
+      "input": {
+        "model_resource_ids": [
+          "model-9f0faab5",
+          "model-507709af",
+          "model-2c3c457e"
+        ]
+      },
+      "output": {
+        "experiment_id": "exp-850969ad",
+        "comparison_table": [
+          {
+            "model_type": "svm",
+            "accuracy": 0.95,
+            "f1_weighted": 0.949874686716792,
+            "f1_macro": 0.949874686716792,
+            "training_time_s": 0.118,
+            "inference_time_s": 0.008
+          },
+          {
+            "model_type": "qsvm",
+            "accuracy": 0.5,
+            "f1_weighted": 0.3333333333333333,
+            "f1_macro": 0.3333333333333333,
+            "training_time_s": 24.153,
+            "inference_time_s": 16.447
+          },
+          {
+            "model_type": "vqc",
+            "accuracy": 0.5,
+            "f1_weighted": 0.4791666666666667,
+            "f1_macro": 0.4791666666666667,
+            "training_time_s": 33.296,
+            "inference_time_s": 0.217
+          }
+        ],
+        "best_model": {
+          "model_type": "svm",
+          "accuracy": 0.95,
+          "f1_weighted": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "training_time_s": 0.118,
+          "inference_time_s": 0.008
+        },
+        "quantum_vs_baseline": {
+          "best_quantum": {
+            "model_type": "qsvm",
+            "accuracy": 0.5,
+            "f1_weighted": 0.3333333333333333,
+            "f1_macro": 0.3333333333333333,
+            "training_time_s": 24.153,
+            "inference_time_s": 16.447
+          },
+          "best_classical": {
+            "model_type": "svm",
+            "accuracy": 0.95,
+            "f1_weighted": 0.949874686716792,
+            "f1_macro": 0.949874686716792,
+            "training_time_s": 0.118,
+            "inference_time_s": 0.008
+          },
+          "quantum_advantage": false,
+          "accuracy_delta": -0.44999999999999996
+        },
+        "_output_validation_warnings": [
+          "$.best_model: {'model_type': 'svm', 'accuracy': 0.95, 'f1_weighted': 0.949874686716792, 'f1_macro': 0.949874686716792, 'training_time_s': 0.118, 'inference_time_s': 0.008} is not of type 'string'"
+        ]
+      },
+      "error": null,
+      "started_at": "2026-03-05T20:43:39-0300",
+      "completed_at": "2026-03-05T20:43:39-0300",
+      "context": {
+        "context_id": "exp-850969ad",
+        "timestamp": "2026-03-05T20:43:39-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-15ce87af": {
+      "experiment_id": "exp-15ce87af",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T21:15:28-0300"
+      },
+      "started_at": "2026-03-05T21:15:28-0300",
+      "completed_at": "2026-03-05T21:15:28-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-f3867530": {
+      "experiment_id": "exp-f3867530",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-f3867530",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-5ff29bf7"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:15:28-0300",
+      "completed_at": "2026-03-05T21:15:29-0300",
+      "context": {
+        "context_id": "exp-f3867530",
+        "timestamp": "2026-03-05T21:15:28-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-a3433f69": {
+      "experiment_id": "exp-a3433f69",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-5ff29bf7",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-a3433f69",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-44226575"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-b6202ea1"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.156,
+          "inference_time_s": 0.008
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:15:29-0300",
+      "completed_at": "2026-03-05T21:15:29-0300",
+      "context": {
+        "context_id": "exp-a3433f69",
+        "timestamp": "2026-03-05T21:15:29-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-1ca071b5": {
+      "experiment_id": "exp-1ca071b5",
+      "tool_name": "tool.train_qsvm",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-5ff29bf7",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-1ca071b5",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-714ac3cc"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-e40db5ca"
+        },
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 25.007,
+          "inference_time_s": 17.075
+        },
+        "circuit_depth": 1,
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:15:29-0300",
+      "completed_at": "2026-03-05T21:16:11-0300",
+      "context": {
+        "context_id": "exp-1ca071b5",
+        "timestamp": "2026-03-05T21:15:29-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-d736f079": {
+      "experiment_id": "exp-d736f079",
+      "tool_name": "tool.train_vqc",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-5ff29bf7",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": {
+        "experiment_id": "exp-d736f079",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-6e5f4548"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-62a050e2"
+        },
+        "metrics": {
+          "accuracy": 0.75,
+          "f1_score": 0.7493734335839599,
+          "f1_macro": 0.7493734335839599,
+          "f1_weighted": 0.7493734335839599,
+          "precision": 0.7525252525252526,
+          "recall": 0.75,
+          "confusion_matrix": [
+            [
+              8,
+              2
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "training_time_s": 34.606,
+          "inference_time_s": 0.229
+        },
+        "training_history": [],
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:16:11-0300",
+      "completed_at": "2026-03-05T21:16:46-0300",
+      "context": {
+        "context_id": "exp-d736f079",
+        "timestamp": "2026-03-05T21:16:11-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-e023ecdd": {
+      "experiment_id": "exp-e023ecdd",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": "dataset-5ff29bf7",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50,
+        "coupling_strength": 1.0,
+        "transverse_field": 0.5
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_vqe_classifier",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_vqe_classifier'.",
+        "details": {
+          "validation_errors": [
+            "Unknown tool: tool.train_vqe_classifier"
+          ]
+        },
+        "timestamp": "2026-03-05T21:16:46-0300"
+      },
+      "started_at": "2026-03-05T21:16:46-0300",
+      "completed_at": "2026-03-05T21:16:46-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-a07ba957": {
+      "experiment_id": "exp-a07ba957",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T21:36:08-0300"
+      },
+      "started_at": "2026-03-05T21:36:08-0300",
+      "completed_at": "2026-03-05T21:36:08-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-b11edb1d": {
+      "experiment_id": "exp-b11edb1d",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-b11edb1d",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-60737dfe"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:36:08-0300",
+      "completed_at": "2026-03-05T21:36:08-0300",
+      "context": {
+        "context_id": "exp-b11edb1d",
+        "timestamp": "2026-03-05T21:36:08-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-b7e32af7": {
+      "experiment_id": "exp-b7e32af7",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-60737dfe",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-b7e32af7",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-55773a37"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-86b2ae15"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.081,
+          "inference_time_s": 0.013
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:36:08-0300",
+      "completed_at": "2026-03-05T21:36:08-0300",
+      "context": {
+        "context_id": "exp-b7e32af7",
+        "timestamp": "2026-03-05T21:36:08-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-9c722f3a": {
+      "experiment_id": "exp-9c722f3a",
+      "tool_name": "tool.train_qsvm",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-60737dfe",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-9c722f3a",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-608c0436"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-f7bd651f"
+        },
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.662,
+          "inference_time_s": 16.876
+        },
+        "circuit_depth": 1,
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:36:08-0300",
+      "completed_at": "2026-03-05T21:36:50-0300",
+      "context": {
+        "context_id": "exp-9c722f3a",
+        "timestamp": "2026-03-05T21:36:08-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-58c044e3": {
+      "experiment_id": "exp-58c044e3",
+      "tool_name": "tool.train_vqc",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-60737dfe",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": {
+        "experiment_id": "exp-58c044e3",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-356af2ca"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-1d40787b"
+        },
+        "metrics": {
+          "accuracy": 0.45,
+          "f1_score": 0.4133333333333334,
+          "f1_macro": 0.41333333333333333,
+          "f1_weighted": 0.4133333333333334,
+          "precision": 0.4333333333333334,
+          "recall": 0.45,
+          "confusion_matrix": [
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              2
+            ]
+          ],
+          "training_time_s": 34.507,
+          "inference_time_s": 0.229
+        },
+        "training_history": [],
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T21:36:50-0300",
+      "completed_at": "2026-03-05T21:37:24-0300",
+      "context": {
+        "context_id": "exp-58c044e3",
+        "timestamp": "2026-03-05T21:36:50-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-c3d8577c": {
+      "experiment_id": "exp-c3d8577c",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "FAILED",
+      "input": {
+        "dataset_resource_id": "dataset-60737dfe",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50,
+        "coupling_strength": 1.0,
+        "transverse_field": 0.5
+      },
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.train_vqe_classifier",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.train_vqe_classifier'.",
+        "details": {
+          "validation_errors": [
+            "Unknown tool: tool.train_vqe_classifier"
+          ]
+        },
+        "timestamp": "2026-03-05T21:37:24-0300"
+      },
+      "started_at": "2026-03-05T21:37:24-0300",
+      "completed_at": "2026-03-05T21:37:24-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-b1a61922": {
+      "experiment_id": "exp-b1a61922",
+      "tool_name": "tool.initialize_project",
+      "status": "FAILED",
+      "input": {},
+      "output": null,
+      "error": {
+        "error": true,
+        "tool_name": "tool.initialize_project",
+        "error_type": "SCHEMA_VALIDATION_ERROR",
+        "message": "Input validation failed for 'tool.initialize_project'.",
+        "details": {
+          "validation_errors": [
+            "$: 'project_root' is a required property",
+            "$: 'dataset_root' is a required property"
+          ]
+        },
+        "timestamp": "2026-03-05T22:25:45-0300"
+      },
+      "started_at": "2026-03-05T22:25:45-0300",
+      "completed_at": "2026-03-05T22:25:45-0300",
+      "context": {},
+      "resources_created": []
+    },
+    "exp-42a30050": {
+      "experiment_id": "exp-42a30050",
+      "tool_name": "tool.load_dataset",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_name": "eurosat_rgb",
+        "seed": 42,
+        "max_samples": 100
+      },
+      "output": {
+        "experiment_id": "exp-42a30050",
+        "resource": {
+          "resource_type": "resource.dataset",
+          "resource_id": "dataset-a54d67a9"
+        },
+        "dataset_hash": "aa5a46574be4f7b23af2e08a46c6a512f9a0f8fe853fd30696a15c0f296185ab",
+        "num_classes": 2,
+        "class_names": [
+          "AnnualCrop",
+          "SeaLake"
+        ],
+        "splits": {
+          "train": 60,
+          "val": 20,
+          "test": 20
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:25:45-0300",
+      "completed_at": "2026-03-05T22:25:46-0300",
+      "context": {
+        "context_id": "exp-42a30050",
+        "timestamp": "2026-03-05T22:25:45-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-b1a8cfed": {
+      "experiment_id": "exp-b1a8cfed",
+      "tool_name": "tool.run_baseline",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-a54d67a9",
+        "model_type": "svm",
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-b1a8cfed",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-45ce23a6"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-081fccc9"
+        },
+        "metrics": {
+          "accuracy": 0.95,
+          "f1_score": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "f1_weighted": 0.949874686716792,
+          "precision": 0.9545454545454545,
+          "recall": 0.95,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.157,
+          "inference_time_s": 0.013
+        }
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:25:46-0300",
+      "completed_at": "2026-03-05T22:25:46-0300",
+      "context": {
+        "context_id": "exp-b1a8cfed",
+        "timestamp": "2026-03-05T22:25:46-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-810581fa": {
+      "experiment_id": "exp-810581fa",
+      "tool_name": "tool.train_qsvm",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-a54d67a9",
+        "n_qubits": 8,
+        "seed": 42
+      },
+      "output": {
+        "experiment_id": "exp-810581fa",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-9f7645e1"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-760b6485"
+        },
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_score": 0.3333333333333333,
+          "f1_macro": 0.3333333333333333,
+          "f1_weighted": 0.3333333333333333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "confusion_matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "training_time_s": 24.646,
+          "inference_time_s": 17.259
+        },
+        "circuit_depth": 1,
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:25:46-0300",
+      "completed_at": "2026-03-05T22:26:29-0300",
+      "context": {
+        "context_id": "exp-810581fa",
+        "timestamp": "2026-03-05T22:25:46-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-0b7fa5ef": {
+      "experiment_id": "exp-0b7fa5ef",
+      "tool_name": "tool.train_vqc",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-a54d67a9",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50
+      },
+      "output": {
+        "experiment_id": "exp-0b7fa5ef",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-c509be17"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-c7f5bb86"
+        },
+        "metrics": {
+          "accuracy": 0.35,
+          "f1_score": 0.3350383631713555,
+          "f1_macro": 0.3350383631713555,
+          "f1_weighted": 0.3350383631713555,
+          "precision": 0.33516483516483514,
+          "recall": 0.35,
+          "confusion_matrix": [
+            [
+              5,
+              5
+            ],
+            [
+              8,
+              2
+            ]
+          ],
+          "training_time_s": 34.394,
+          "inference_time_s": 0.226
+        },
+        "training_history": [],
+        "n_qubits_used": 8
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:26:29-0300",
+      "completed_at": "2026-03-05T22:27:03-0300",
+      "context": {
+        "context_id": "exp-0b7fa5ef",
+        "timestamp": "2026-03-05T22:26:29-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-f0abcbc6": {
+      "experiment_id": "exp-f0abcbc6",
+      "tool_name": "tool.train_vqe_classifier",
+      "status": "COMPLETED",
+      "input": {
+        "dataset_resource_id": "dataset-a54d67a9",
+        "n_qubits": 8,
+        "seed": 42,
+        "ansatz": "real_amplitudes",
+        "optimizer": "cobyla",
+        "max_iter": 50,
+        "coupling_strength": 1.0,
+        "transverse_field": 0.5
+      },
+      "output": {
+        "experiment_id": "exp-f0abcbc6",
+        "model_resource": {
+          "resource_type": "resource.model",
+          "resource_id": "model-18e280f4"
+        },
+        "metrics_resource": {
+          "resource_type": "resource.metrics",
+          "resource_id": "metrics-9a854798"
+        },
+        "metrics": {
+          "accuracy": 0.65,
+          "f1_score": 0.6266666666666666,
+          "f1_macro": 0.6266666666666667,
+          "f1_weighted": 0.6266666666666666,
+          "precision": 0.7,
+          "recall": 0.65,
+          "confusion_matrix": [
+            [
+              4,
+              6
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "training_time_s": 0.964,
+          "inference_time_s": 0.52,
+          "vqe_energies": {
+            "0": -35.545425626420396,
+            "1": -30.80438192640187
+          },
+          "mean_vqe_energy": -33.174903776411135
+        },
+        "vqe_energies": {
+          "0": -35.545425626420396,
+          "1": -30.80438192640187
+        },
+        "n_qubits_used": 8,
+        "n_classes": 2,
+        "training_history": [
+          {
+            "class": 0,
+            "energy": -35.545425626420396,
+            "evals": 50
+          },
+          {
+            "class": 1,
+            "energy": -30.80438192640187,
+            "evals": 50
+          }
+        ]
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:27:03-0300",
+      "completed_at": "2026-03-05T22:27:05-0300",
+      "context": {
+        "context_id": "exp-f0abcbc6",
+        "timestamp": "2026-03-05T22:27:03-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
+    },
+    "exp-bd6ebdef": {
+      "experiment_id": "exp-bd6ebdef",
+      "tool_name": "tool.compare_models",
+      "status": "COMPLETED_WITH_WARNINGS",
+      "input": {
+        "model_resource_ids": [
+          "model-45ce23a6",
+          "model-9f7645e1",
+          "model-c509be17",
+          "model-18e280f4"
+        ]
+      },
+      "output": {
+        "experiment_id": "exp-bd6ebdef",
+        "comparison_table": [
+          {
+            "model_type": "svm",
+            "accuracy": 0.95,
+            "f1_weighted": 0.949874686716792,
+            "f1_macro": 0.949874686716792,
+            "training_time_s": 0.157,
+            "inference_time_s": 0.013
+          },
+          {
+            "model_type": "vqe_classifier",
+            "accuracy": 0.65,
+            "f1_weighted": 0.6266666666666666,
+            "f1_macro": 0.6266666666666667,
+            "training_time_s": 0.964,
+            "inference_time_s": 0.52
+          },
+          {
+            "model_type": "qsvm",
+            "accuracy": 0.5,
+            "f1_weighted": 0.3333333333333333,
+            "f1_macro": 0.3333333333333333,
+            "training_time_s": 24.646,
+            "inference_time_s": 17.259
+          },
+          {
+            "model_type": "vqc",
+            "accuracy": 0.35,
+            "f1_weighted": 0.3350383631713555,
+            "f1_macro": 0.3350383631713555,
+            "training_time_s": 34.394,
+            "inference_time_s": 0.226
+          }
+        ],
+        "best_model": {
+          "model_type": "svm",
+          "accuracy": 0.95,
+          "f1_weighted": 0.949874686716792,
+          "f1_macro": 0.949874686716792,
+          "training_time_s": 0.157,
+          "inference_time_s": 0.013
+        },
+        "quantum_vs_baseline": {
+          "best_quantum": {
+            "model_type": "qsvm",
+            "accuracy": 0.5,
+            "f1_weighted": 0.3333333333333333,
+            "f1_macro": 0.3333333333333333,
+            "training_time_s": 24.646,
+            "inference_time_s": 17.259
+          },
+          "best_classical": {
+            "model_type": "svm",
+            "accuracy": 0.95,
+            "f1_weighted": 0.949874686716792,
+            "f1_macro": 0.949874686716792,
+            "training_time_s": 0.157,
+            "inference_time_s": 0.013
+          },
+          "quantum_advantage": false,
+          "accuracy_delta": -0.44999999999999996
+        },
+        "_output_validation_warnings": [
+          "$.best_model: {'model_type': 'svm', 'accuracy': 0.95, 'f1_weighted': 0.949874686716792, 'f1_macro': 0.949874686716792, 'training_time_s': 0.157, 'inference_time_s': 0.013} is not of type 'string'"
+        ]
+      },
+      "error": null,
+      "started_at": "2026-03-05T22:27:05-0300",
+      "completed_at": "2026-03-05T22:27:05-0300",
+      "context": {
+        "context_id": "exp-bd6ebdef",
+        "timestamp": "2026-03-05T22:27:05-0300",
+        "seed": 42,
+        "dataset_hash": "",
+        "backend": "aer_statevector",
+        "model_version": "",
+        "extra": {}
+      },
+      "resources_created": []
     }
   },
   "version": "1.0.0",
-  "last_updated": "2026-03-02T21:41:15-0300"
+  "last_updated": "2026-03-05T22:27:05-0300"
 }
