@@ -1,0 +1,27 @@
+{
+    "data": {
+        "dataset_name": "eurosat_rgb",
+        "dataset_path": "datasets/eurosat",
+        "classes": ["AnnualCrop", "SeaLake"],
+        "max_samples": 20,
+        "img_size": 32,
+        "n_pca_components": 4,
+        "seed": 42
+    },
+    "models": [
+        {
+            "model_type": "svm",
+            "seed": 42
+        },
+        {
+            "model_type": "vqc",
+            "n_qubits": 4,
+            "ansatz_type": "real_amplitudes",
+            "feature_map_type": "zz",
+            "optimizer_type": "cobyla",
+            "max_iter": 20,
+            "seed": 42
+        }
+    ],
+    "output_dir": "outputs"
+}

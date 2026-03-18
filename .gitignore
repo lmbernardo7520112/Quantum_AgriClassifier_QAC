@@ -41,6 +41,11 @@ Thumbs.db
 *.tmp
 .cache/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Outputs (experiment results, plots)
+outputs/
 
 # Modelos grandes (ajuste conforme necessário)
 *.pkl
@@ -53,3 +58,9 @@ models/*.bin
 venv_QAC/
 datasets/
 test_json_*.py
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build artifacts
+*.egg-info/
