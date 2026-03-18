@@ -56,7 +56,8 @@ models/*.bin
 
 # Ignorar pastas de ambiente e diretórios grandes
 venv_QAC/
-datasets/
+datasets/*
+!datasets/eurosat_bloco3/
 test_json_*.py
 
 # Notebook checkpoints

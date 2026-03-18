@@ -1,7 +1,7 @@
 {
     "data": {
         "dataset_name": "eurosat_rgb",
-        "dataset_path": "datasets/eurosat",
+        "dataset_path": "datasets/eurosat_bloco3",
         "classes": ["AnnualCrop", "SeaLake"],
         "max_samples": 20,
         "img_size": 32,
